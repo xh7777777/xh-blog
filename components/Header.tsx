@@ -8,7 +8,8 @@ import SearchButton from './SearchButton'
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between py-10">
+    <header className="my-6 py-4 backdrop-blur-md bg-white/30 dark:bg-black/30  top-0 sticky transition-all duration-300">
+      <div className='flex items-center justify-between rounded-md mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
@@ -25,14 +26,14 @@ const Header = () => {
           </div>
         </Link>
       </div>
-      <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
+      <div className="flex items-center">
         {headerNavLinks
           .filter((link) => link.href !== '/')
           .map((link) => (
             <Link
               key={link.title}
               href={link.href}
-              className="hidden font-medium text-gray-900 dark:text-gray-100 sm:block"
+              className="hidden text-lg font-medium text-gray-900 dark:text-gray-100 sm:flex align-middle justify-center px-2 py-2 mx-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-200"
             >
               {link.title}
             </Link>
@@ -40,6 +41,7 @@ const Header = () => {
         <SearchButton />
         <ThemeSwitch />
         <MobileNav />
+      </div>
       </div>
     </header>
   )

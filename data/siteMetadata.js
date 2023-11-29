@@ -15,6 +15,7 @@ const siteMetadata = {
   github: 'https://github.com/xh7777777',
   twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
+  bilibili: 'https://space.bilibili.com/15385937',
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
   locale: 'zh-CN',

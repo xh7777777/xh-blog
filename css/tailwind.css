@@ -22,6 +22,24 @@
   @apply my-5;
 }
 
+.icon-bg {
+  @apply rounded-md bg-gray-100 dark:bg-gray-700 transition-all duration-300
+}
+
+.neon-text {
+  font-size: 3rem;
+  color: #fff;
+  position: relative;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.neon-text:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+               0 0 40px rgba(255, 255, 255, 1),
+               0 0 80px rgba(255, 255, 255, 1);
+}
+
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
