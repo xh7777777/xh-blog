@@ -1,9 +1,16 @@
-import { sortPosts, allCoreContent } from 'pliny/utils/contentlayer'
-import { allBlogs } from 'contentlayer/generated'
+'use client'
+import React from 'react'
 import Main from './Main'
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
 
-export default async function Page() {
-  const sortedPosts = sortPosts(allBlogs)
-  const posts = allCoreContent(sortedPosts)
-  return <Main posts={posts} />
+
+export default function Page() {
+  const [queryClient] = React.useState(() => new QueryClient())
+
+  return <QueryClientProvider client={queryClient}>
+        <Main />
+    </QueryClientProvider>
 }

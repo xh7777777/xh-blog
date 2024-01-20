@@ -1,9 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'XH777 Blog',
+  title: 'xh777的个人小站',
   author: 'HUAN XIAO',
-  headerTitle: 'XH777',
-  description: '使用Next.js与Tailwind.css构建的个人博客',
+  headerTitle: 'xh777的个人小站',
+  description: '使用Next.js与Tailwind.css构建的个人博客，分享前端技术与思考',
   language: 'zh-cn',
   theme: 'system', // system, dark or light
   siteUrl: 'https://xh777blog.xyz',
@@ -13,8 +13,6 @@ const siteMetadata = {
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: '490327763@qq.com',
   github: 'https://github.com/xh7777777',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
   bilibili: 'https://space.bilibili.com/15385937',
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
@@ -73,20 +71,20 @@ const siteMetadata = {
       lang: 'en',
     },
   },
-  search: {
-    provider: 'kbar', // kbar or algolia
-    kbarConfig: {
-      searchDocumentsPath: 'search.json', // path to load documents to search
-    },
-    // provider: 'algolia',
-    // algoliaConfig: {
-    //   // The application ID provided by Algolia
-    //   appId: 'R2IYF7ETH7',
-    //   // Public API key: it is safe to commit it
-    //   apiKey: '599cec31baffa4868cae4e79f180729b',
-    //   indexName: 'docsearch',
-    // },
-  },
+  // search: {
+  //   provider: 'kbar', // kbar or algolia
+  //   kbarConfig: {
+  //     searchDocumentsPath: 'search.json', // path to load documents to search
+  //   },
+  //   // provider: 'algolia',
+  //   // algoliaConfig: {
+  //   //   // The application ID provided by Algolia
+  //   //   appId: 'R2IYF7ETH7',
+  //   //   // Public API key: it is safe to commit it
+  //   //   apiKey: '599cec31baffa4868cae4e79f180729b',
+  //   //   indexName: 'docsearch',
+  //   // },
+  // },
 }
 
 module.exports = siteMetadata

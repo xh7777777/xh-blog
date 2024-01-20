@@ -2,7 +2,7 @@
 const { fontFamily } = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
-/** @type {import("tailwindcss/types").Config } */
+// /** @type {import("tailwindcss/types").Config } */
 module.exports = {
   content: [
     './node_modules/pliny/**/*.js',
@@ -15,6 +15,15 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      keyframes: {
+        stroke: {
+          '0%': { strokeDashoffset: 20, strokeDasharray: 20 },
+          '100%': { strokeDashoffset: 0, strokeDasharray: 0 },
+        },
+      },
+      animation: {
+        stroke: 'stroke 1s forwards',
+      },
       lineHeight: {
         11: '2.75rem',
         12: '3rem',
@@ -27,6 +36,9 @@ module.exports = {
       colors: {
         primary: colors.pink,
         gray: colors.gray,
+      },
+      backgroundColor: {
+        'transparent-yellow': 'rgba(255, 255, 0, 0.2)',
       },
       typography: ({ theme }) => ({
         DEFAULT: {

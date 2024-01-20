@@ -71,6 +71,23 @@ module.exports = () => {
           protocol: 'https',
           hostname: 'picsum.photos',
         },
+        {
+          protocol: 'http',
+          hostname: 'localhost',
+          port: '3004',
+        },
+        {
+            protocol: 'https',
+            hostname: 'xh777blog.xyz',
+        },
+        {
+            protocol: 'https',
+            hostname: 'myadministration.xh777blog.xyz',
+        },
+        {
+            protocol: 'https',
+            hostname: 'cdn.xh777blog.xyz',
+        }
       ],
     },
     async headers() {
