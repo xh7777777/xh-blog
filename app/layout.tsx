@@ -12,7 +12,6 @@ import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
 
-
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
   display: 'swap',
@@ -83,7 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Header />
             <SectionContainer>
               <div className="flex min-h-screen flex-col justify-between font-sans">
-                <main className="mb-auto mt-20">{children}</main>
+                <main className="mb-auto">{children}</main>
                 <Footer />
               </div>
             </SectionContainer>

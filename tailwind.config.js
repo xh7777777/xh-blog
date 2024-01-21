@@ -57,9 +57,17 @@ module.exports = {
             h3: {
               fontWeight: '600',
             },
+            pre: {
+              backgroundColor: theme('colors.gray.100'),
+              borderRadius: theme('borderRadius.lg'),
+              padding: theme('padding.2'),
+            },
             code: {
               color: theme('colors.indigo.500'),
             },
+            img: {
+              borderRadius: theme('borderRadius.lg'),
+            }
           },
         },
         invert: {
@@ -73,6 +81,11 @@ module.exports = {
             },
             'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.100'),
+            },
+            pre: {
+              backgroundColor: theme('colors.gray.800'),
+              borderRadius: theme('borderRadius.lg'),
+              padding: theme('padding.2'),
             },
           },
         },

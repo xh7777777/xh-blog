@@ -1785,6 +1785,8 @@ arg@^5.0.2:
 
 argparse@^1.0.7:
   version "1.0.10"
+  resolved "https://registry.npmmirror.com/argparse/-/argparse-1.0.10.tgz"
+  integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
   dependencies:
     sprintf-js "~1.0.2"
 
@@ -3361,6 +3363,11 @@ hey-listen@^1.0.8:
   resolved "https://registry.npmmirror.com/hey-listen/-/hey-listen-1.0.8.tgz"
   integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
 
+highlight.js@^11.9.0:
+  version "11.9.0"
+  resolved "https://registry.npmmirror.com/highlight.js/-/highlight.js-11.9.0.tgz"
+  integrity sha512-fJ7cW7fQGCYAkgv4CPfwFHrfd/cLS4Hau96JuJ+ZTOWhjnhoeN1ub1tFmALm/+lW5z4WCAuAV9bm05AP0mS6Gw==
+
 html-enumerated-attributes@^0.1.0:
   version "0.1.0"
 
@@ -3619,6 +3626,8 @@ isarray@~1.0.0:
 
 isarray@0.0.1:
   version "0.0.1"
+  resolved "https://registry.npmmirror.com/isarray/-/isarray-0.0.1.tgz"
+  integrity sha512-D2S+3GLxWH+uhrNEcoh/fnmYeP8E8/zHl644d/jdA0g2uyXvy3sb0qxotE+ne0LtccHknQzWwZEzhak7oJ0COQ==
 
 isexe@^2.0.0:
   version "2.0.0"
@@ -3840,6 +3849,16 @@ markdown-extensions@^1.0.0:
 
 markdown-table@^3.0.0:
   version "3.0.3"
+
+marked-highlight@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmmirror.com/marked-highlight/-/marked-highlight-2.1.0.tgz"
+  integrity sha512-peBvgGZZqUw074Vy/N8Y7/6JQhSnR54/T0Ozq2/fAIBzcYfVfExFdQJptIhQxreR1elpwvJRrqhp6S/Prk8prA==
+
+marked@^11.1.1:
+  version "11.1.1"
+  resolved "https://registry.npmmirror.com/marked/-/marked-11.1.1.tgz"
+  integrity sha512-EgxRjgK9axsQuUa/oKMx5DEY8oXpKJfk61rT5iY3aRlgU6QJtUcxU5OAymdhCvWvhYcd9FKmO5eQoX8m9VGJXg==
 
 mdast-util-definitions@^5.0.0:
   version "5.1.2"
@@ -5525,6 +5544,8 @@ streamsearch@^1.1.0:
 
 string_decoder@~0.10.x:
   version "0.10.31"
+  resolved "https://registry.npmmirror.com/string_decoder/-/string_decoder-0.10.31.tgz"
+  integrity sha512-ev2QzSzWPYmy9GuqfIVildA4OdcGLeFZQrq5ys6RtiuF+RQQiZWr8TZNyAcuVXyQRYfEO+MsoB/1BuQVhOJuoQ==
 
 string_decoder@~1.1.1:
   version "1.1.1"
