@@ -1,27 +1,25 @@
 import Link from '@/components/Link'
-import Tag from '@/components/Tag'
 import Welcome from '@/components/Welcome'
 import PostCard from '@/components/card/PostCard'
 import siteMetadata from '@/data/siteMetadata'
-import { formatDate } from 'pliny/utils/formatDate'
 import NewsletterForm from 'pliny/ui/NewsletterForm'
-import { PREFIX } from '@/data/constant'
 import { motion } from 'framer-motion'
 import { fadeIn, staggerContainer } from 'utils/motion'
 import { getPostList } from 'api/serverApi'
+import { strapiToPost } from '@/data/type/dto'
 
-const MAX_DISPLAY = 5
+const MAX_DISPLAY = 3
 
 export default async function Home() {
-  const data = await getPostList(0, MAX_DISPLAY)
-  const posts = data?.data ?? []
+  const {data:postData} = await getPostList(0, MAX_DISPLAY)
+  const posts = strapiToPost(postData)
   
   return (
     <>
       <Welcome />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight ttt sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             最新文章
           </h1>
         </div>
@@ -35,16 +33,16 @@ export default async function Home() {
           className={`divide-y divide-gray-200 dark:divide-gray-700`}
         >
           {posts.map((post, index) => (
-            <motion.div key={post.attributes.Slug} variants={fadeIn('up', 'spring', index * 0.3, 1)}>
+            <motion.div key={post.Slug} variants={fadeIn('up', 'spring', index * 0.3, 1)}>
               <PostCard
-                key={post.attributes.Slug}
-                title={post.attributes.title}
-                description={post.attributes.description}
-                tags={post.attributes.tags}
-                publish_date={formatDate(post.attributes.publish_date)}
-                read_time={post.attributes.read_time}
-                Slug={post.attributes.Slug}
-                cover_url={PREFIX + post.attributes.cover_code.data.attributes.url}
+                id= {post.id}
+                title={post.title}
+                description={post.description}
+                tags={post.tags}
+                publish_date={post.publish_date}
+                read_time={post.read_time}
+                Slug={post.Slug}
+                cover_url={post.cover_url}
               />
             </motion.div>
           ))}
