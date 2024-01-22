@@ -16,3 +16,20 @@ export interface ITag {
     articles_id?: string[],
     show?: boolean
 }
+
+export interface IProject {
+    id: string
+    name: string
+    description: string
+    url: string
+    cover_url: string
+}
+
+export interface IAbout {
+    name: string
+    skills: string
+    avatar_url: string
+    experience: string
+    resume_url: string
+    about: string
+}

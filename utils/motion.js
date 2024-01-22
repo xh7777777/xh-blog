@@ -68,7 +68,7 @@ export const navVariants = {
     },
     show: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
+      transition: { staggerChildren: 0.03, delayChildren: i * 0.03 },
     }),
   };
   

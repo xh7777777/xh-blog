@@ -5,6 +5,7 @@ import { getAllPostSlug, getPostBySlug, getPostMetaDataBySlug } from 'api/server
 import MdToHtml from '@/components/Markdown/MdToHtml'
 import { PREFIX } from '@/data/constant'
 import Image from 'next/image'
+import moment from 'moment'
 
 const defaultAuthor = siteMetadata.author
 
@@ -85,7 +86,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
     <div className='flex gap-3'>
       <dl className="text-base font-medium leading-6 ttt">
         <dd>
-          <time dateTime={publish_date}>发布于 {publish_date}</time>
+          <time dateTime={publish_date}>发布于 { moment(publish_date).format('YYYY-MM-DD')}</time>
         </dd>
       </dl>
       <div>·</div>

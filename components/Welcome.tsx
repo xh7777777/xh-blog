@@ -6,10 +6,15 @@ import { motion } from 'framer-motion'
 import { TitleText, TypingText } from './animation/Text';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
 import avatar from '../public/static/images/avatar.png'
+import Link from 'next/link';
+
+const welcome = `你好,我是xh777`
+const description = `我是一名前端工程师，对开源社区、React、Nodejs、CICD、音视频技术等有着很大的热情。
+这里汇集了我的思考、生活与我的一切，祝您有很好的阅读体验~`
 
 function Welcome() {
   return (
-    <section className={`relative z-10`}>
+    <section className={`relative z-10 py-8`}>
     <motion.div
     // @ts-ignore
       variants={staggerContainer}
@@ -22,12 +27,11 @@ function Welcome() {
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="flex-[0.95] flex flex-col"
       >
-        <TitleText title="你好！" />
-        <TypingText title="欢迎访问的我个人博客，我将在这里分享我感兴趣的技术以及热爱的音乐。" />
-        <motion.div className=' flex justify-between'>
-          <button>我的项目</button>
-          <button>我的简历</button>
-          <button>我的音乐</button>
+        <TitleText title={welcome} />
+        <TypingText title={description} textStyles='prose text-md ttt py-4' />
+        <motion.div className='flex gap-4 py-2 md:py-6'>
+          <Link href={'/about'} className=' rounded-sm icon-bg px-4 py-2 ttt'>关于我</Link>
+          <Link href={'/blog'} className=' rounded-sm icon-bg px-4 py-2 ttt'>阅读文章</Link>
         </motion.div>
       </motion.div>
 

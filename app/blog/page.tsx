@@ -1,7 +1,7 @@
 import { genPageMetadata } from 'app/seo'
 import { getAllTags, getPostList } from 'api/serverApi'
 import PostListLayout from '@/layouts/PostListLayout'
-import { strapiToPost, strapiToTag } from '@/data/type/dto'
+import { strapiToPost, strapiToTag } from 'type/dto'
 
 export const metadata = genPageMetadata({ title: 'Blog' })
 

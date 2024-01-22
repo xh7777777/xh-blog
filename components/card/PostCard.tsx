@@ -2,11 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Tag from '@/components/Tag';
-import type  { IPost } from '@/data/type';
+import type  { IPost } from 'type';
 
-function PostCard({ Slug, cover_url, description, title, tags, publish_date, read_time }: IPost) {
+function PostCard({ Slug, cover_url, description, title, tags, publish_date, read_time, className }: IPost & { className?: string }) {
   return (
-    <div className="py-12">
+    <div className={className}>
       <article>
         <div
           className=" group flex flex-col justify-start gap-8 rounded-3xl p-6 hover:bg-transparent-yellow md:flex-row duration-150 transition-colors"

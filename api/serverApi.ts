@@ -108,3 +108,24 @@ export async function getAllTags() {
   )
   return res
 }
+
+export async function getProjects() {
+  const query = qs.stringify({
+    fields: ['id', 'name', 'description', 'url'],
+    populate: ['cover_code'],
+})
+  const res = await fetch(URL + `/projects?${query}`, { next: { revalidate: 3600 } }).then((res) =>
+    res.json()
+  )
+  return res
+}
+
+export async function getAbout() {
+  const query = qs.stringify({
+    fields: ['name', 'about', 'skills', 'avatar', 'experience', 'resume_url'],
+  })
+  const res = await fetch(URL + `/configs?${query}`, { next: { revalidate: 3600 } }).then((res) =>
+    res.json()
+  )
+  return res
+}

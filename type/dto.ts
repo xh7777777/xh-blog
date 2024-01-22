@@ -1,5 +1,5 @@
-import { IPost, ITag } from '.'
-import { checkArr } from '../../utils'
+import { IPost, ITag, IProject } from '.'
+import { checkArr } from '../utils'
 import { PREFIX } from '@/data/constant'
 import moment from 'moment'
 
@@ -35,6 +35,22 @@ export function strapiToTag(tagData): ITag[] {
       tag_name,
       articles_id,
       show: articles_id.length > 0 ? true : false,
+    }
+    acc.push(item)
+    return acc
+  }, [])
+}
+
+export function strapiToProject(projectData): IProject[] {
+  return checkArr(projectData).reduce((acc, cur) => {
+    const { name, description, url, cover_code } = cur.attributes
+    const cover_url = cover_code ? PREFIX + cover_code?.data?.attributes?.url : ''
+    let item = {
+      id: cur.id,
+      name,
+      description,
+      url,
+      cover_url,
     }
     acc.push(item)
     return acc

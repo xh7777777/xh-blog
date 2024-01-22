@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'xh777的个人小站',
   author: 'HUAN XIAO',
   headerTitle: 'xh777的个人小站',
-  description: '分享前端技术、生活感悟、读书笔记、旅行见闻等',
+  description: '分享前端技术、生活感悟、读书笔记、音乐演奏等...',
   language: 'zh-cn',
   theme: 'system', // system, dark or light
   siteUrl: 'https://xh777blog.xyz',

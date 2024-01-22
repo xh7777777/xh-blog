@@ -1,20 +1,20 @@
-import { Authors, allAuthors } from 'contentlayer/generated'
-import { MDXLayoutRenderer } from 'pliny/mdx-components'
 import AuthorLayout from '@/layouts/AuthorLayout'
-import { coreContent } from 'pliny/utils/contentlayer'
 import { genPageMetadata } from 'app/seo'
+import { getAbout } from 'api/serverApi'
+import { notFound } from 'next/navigation'
 
 export const metadata = genPageMetadata({ title: 'About' })
 
-export default function Page() {
-  const author = allAuthors.find((p) => p.slug === 'default') as Authors
-  const mainContent = coreContent(author)
+export default async function Page() {
+
+  const {data: aboutData} = await getAbout()
+  if (!aboutData || !Array.isArray(aboutData) || aboutData.length === 0) {
+    return notFound();
+  }
 
   return (
     <>
-      <AuthorLayout content={mainContent}>
-        <MDXLayoutRenderer code={author.body.code} />
-      </AuthorLayout>
+      <AuthorLayout content={aboutData[0].attributes}/>
     </>
   )
 }

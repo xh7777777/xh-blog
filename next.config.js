@@ -87,6 +87,18 @@ module.exports = () => {
         {
             protocol: 'https',
             hostname: 'cdn.xh777blog.xyz',
+        },
+        {
+            protocol: 'https',
+            hostname: 'imxh777.cn',
+        },
+        {
+            protocol: 'https',
+            hostname: 'admin.imxh777.cn',
+        },
+        {
+            protocol: 'https',
+            hostname: 'cdn.imxh777.cn',
         }
       ],
     },
