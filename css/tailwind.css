@@ -172,3 +172,12 @@ code.hljs {
   /* purposely ignored */
   
 }
+
+.timeline {
+  @apply relative border-l-[2px] pl-2;
+}
+
+.timeline::before {
+  @apply absolute top-0 -left-[4.5px] w-2 h-2 rounded-full bg-gray-300 dark:bg-gray-700;
+  content:'';
+}

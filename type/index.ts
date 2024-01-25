@@ -28,7 +28,7 @@ export interface IProject {
 export interface IAbout {
     name: string
     skills: string
-    avatar_url: string
+    avatar: string
     experience: string
     resume_url: string
     about: string

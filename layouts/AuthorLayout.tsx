@@ -3,14 +3,16 @@ import Image from '@/components/Image'
 import siteMetadata from '@/data/siteMetadata'
 import { IAbout } from 'type'
 import MdToHtml from '@/components/Markdown/MdToHtml'
-
+import SkillList from '@/components/SkillList'
+import Experience from '@/components/Experience'
+import Link from 'next/link'
 interface Props {
   content: IAbout
 }
 
 export default function AuthorLayout({ content }: Props) {
   // const { name, avatar, occupation, company, email, twitter, linkedin, github } = content
-  const { name, avatar_url, skills, experience, resume_url, about} = content
+  const { name, avatar, skills, experience, resume_url, about } = content
 
   return (
     <>
@@ -22,9 +24,9 @@ export default function AuthorLayout({ content }: Props) {
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center space-x-2 pt-8">
-            {avatar_url && (
+            {avatar && (
               <Image
-                src={avatar_url}
+                src={avatar}
                 alt="avatar"
                 width={192}
                 height={192}
@@ -40,18 +42,23 @@ export default function AuthorLayout({ content }: Props) {
             </div>
           </div>
           <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
-             <MdToHtml content={about} />
+            <MdToHtml content={about} />
           </div>
         </div>
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
             技能
           </h1>
+          <SkillList />
         </div>
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
-            经历
-          </h1>
+          <div className="flex justify-between">
+            <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
+              经历
+            </h1>
+            <Link className='rounded-lg bg-slate-200 border-2 w-20 h-10 leading-8 text-center' href="...">查看简历</Link>
+          </div>
+          <Experience />
         </div>
       </div>
     </>

@@ -5,8 +5,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion'
 import { TitleText, TypingText } from './animation/Text';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
-import avatar from '../public/static/images/avatar.png'
 import Link from 'next/link';
+import { avatarURL } from '@/data/authors';
 
 const welcome = `你好,我是xh777`
 const description = `我是一名前端工程师，对开源社区、React、Nodejs、CICD、音视频技术等有着很大的热情。
@@ -42,7 +42,7 @@ function Welcome() {
         <Image
           width={100}
           height={100}
-          src={avatar}
+          src={avatarURL}
           alt="get-started"
           className=" w-60 h-60 rounded-full"
         />
