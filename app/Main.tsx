@@ -2,7 +2,6 @@ import Link from '@/components/Link'
 import Welcome from '@/components/Welcome'
 import PostCard from '@/components/card/PostCard'
 import siteMetadata from '@/data/siteMetadata'
-import NewsletterForm from 'pliny/ui/NewsletterForm'
 import { motion } from 'framer-motion'
 import { fadeIn, staggerContainer } from 'utils/motion'
 import { getPostList } from 'api/serverApi'
@@ -66,7 +65,6 @@ export default async function Home() {
       )}
       {siteMetadata.newsletter?.provider && (
         <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
         </div>
       )}
     </>

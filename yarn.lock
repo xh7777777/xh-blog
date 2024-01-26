@@ -5,101 +5,6 @@
 "@aashutoshrathi/word-wrap@^1.2.3":
   version "1.2.6"
 
-"@algolia/autocomplete-core@1.9.3":
-  version "1.9.3"
-  dependencies:
-    "@algolia/autocomplete-plugin-algolia-insights" "1.9.3"
-    "@algolia/autocomplete-shared" "1.9.3"
-
-"@algolia/autocomplete-plugin-algolia-insights@1.9.3":
-  version "1.9.3"
-  dependencies:
-    "@algolia/autocomplete-shared" "1.9.3"
-
-"@algolia/autocomplete-preset-algolia@1.9.3":
-  version "1.9.3"
-  dependencies:
-    "@algolia/autocomplete-shared" "1.9.3"
-
-"@algolia/autocomplete-shared@1.9.3":
-  version "1.9.3"
-
-"@algolia/cache-browser-local-storage@4.20.0":
-  version "4.20.0"
-  dependencies:
-    "@algolia/cache-common" "4.20.0"
-
-"@algolia/cache-common@4.20.0":
-  version "4.20.0"
-
-"@algolia/cache-in-memory@4.20.0":
-  version "4.20.0"
-  dependencies:
-    "@algolia/cache-common" "4.20.0"
-
-"@algolia/client-account@4.20.0":
-  version "4.20.0"
-  dependencies:
-    "@algolia/client-common" "4.20.0"
-    "@algolia/client-search" "4.20.0"
-    "@algolia/transporter" "4.20.0"
-
-"@algolia/client-analytics@4.20.0":
-  version "4.20.0"
-  dependencies:
-    "@algolia/client-common" "4.20.0"
-    "@algolia/client-search" "4.20.0"
-    "@algolia/requester-common" "4.20.0"
-    "@algolia/transporter" "4.20.0"
-
-"@algolia/client-common@4.20.0":
-  version "4.20.0"
-  dependencies:
-    "@algolia/requester-common" "4.20.0"
-    "@algolia/transporter" "4.20.0"
-
-"@algolia/client-personalization@4.20.0":
-  version "4.20.0"
-  dependencies:
-    "@algolia/client-common" "4.20.0"
-    "@algolia/requester-common" "4.20.0"
-    "@algolia/transporter" "4.20.0"
-
-"@algolia/client-search@4.20.0":
-  version "4.20.0"
-  dependencies:
-    "@algolia/client-common" "4.20.0"
-    "@algolia/requester-common" "4.20.0"
-    "@algolia/transporter" "4.20.0"
-
-"@algolia/logger-common@4.20.0":
-  version "4.20.0"
-
-"@algolia/logger-console@4.20.0":
-  version "4.20.0"
-  dependencies:
-    "@algolia/logger-common" "4.20.0"
-
-"@algolia/requester-browser-xhr@4.20.0":
-  version "4.20.0"
-  dependencies:
-    "@algolia/requester-common" "4.20.0"
-
-"@algolia/requester-common@4.20.0":
-  version "4.20.0"
-
-"@algolia/requester-node-http@4.20.0":
-  version "4.20.0"
-  dependencies:
-    "@algolia/requester-common" "4.20.0"
-
-"@algolia/transporter@4.20.0":
-  version "4.20.0"
-  dependencies:
-    "@algolia/cache-common" "4.20.0"
-    "@algolia/logger-common" "4.20.0"
-    "@algolia/requester-common" "4.20.0"
-
 "@alloc/quick-lru@^5.2.0":
   version "5.2.0"
 
@@ -861,7 +766,7 @@
 "@babel/regjsgen@^0.8.0":
   version "0.8.0"
 
-"@babel/runtime@^7.13.10", "@babel/runtime@^7.16.3", "@babel/runtime@^7.23.2", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.20.13", "@babel/runtime@^7.23.2", "@babel/runtime@^7.8.4":
   version "7.23.4"
   dependencies:
     regenerator-runtime "^0.14.0"
@@ -927,113 +832,6 @@
     "@citation-js/date" "^0.5.0"
     citeproc "^2.4.6"
 
-"@contentlayer/cli@0.3.4":
-  version "0.3.4"
-  dependencies:
-    "@contentlayer/core" "0.3.4"
-    "@contentlayer/utils" "0.3.4"
-    clipanion "^3.2.1"
-    typanion "^3.12.1"
-
-"@contentlayer/client@0.3.4":
-  version "0.3.4"
-  dependencies:
-    "@contentlayer/core" "0.3.4"
-
-"@contentlayer/core@0.3.4":
-  version "0.3.4"
-  dependencies:
-    "@contentlayer/utils" "0.3.4"
-    camel-case "^4.1.2"
-    comment-json "^4.2.3"
-    esbuild "0.17.x || 0.18.x"
-    gray-matter "^4.0.3"
-    mdx-bundler "^9.2.1"
-    rehype-stringify "^9.0.3"
-    remark-frontmatter "^4.0.1"
-    remark-parse "^10.0.2"
-    remark-rehype "^10.1.0"
-    source-map-support "^0.5.21"
-    type-fest "^3.12.0"
-    unified "^10.1.2"
-
-"@contentlayer/source-files@0.3.4":
-  version "0.3.4"
-  dependencies:
-    "@contentlayer/core" "0.3.4"
-    "@contentlayer/utils" "0.3.4"
-    chokidar "^3.5.3"
-    fast-glob "^3.2.12"
-    gray-matter "^4.0.3"
-    imagescript "^1.2.16"
-    micromatch "^4.0.5"
-    ts-pattern "^4.3.0"
-    unified "^10.1.2"
-    yaml "^2.3.1"
-    zod "^3.21.4"
-
-"@contentlayer/source-remote-files@0.3.4":
-  version "0.3.4"
-  dependencies:
-    "@contentlayer/core" "0.3.4"
-    "@contentlayer/source-files" "0.3.4"
-    "@contentlayer/utils" "0.3.4"
-
-"@contentlayer/utils@0.3.4":
-  version "0.3.4"
-  dependencies:
-    "@effect-ts/core" "^0.60.5"
-    "@effect-ts/otel" "^0.15.1"
-    "@effect-ts/otel-exporter-trace-otlp-grpc" "^0.15.1"
-    "@effect-ts/otel-sdk-trace-node" "^0.15.1"
-    "@js-temporal/polyfill" "^0.4.4"
-    "@opentelemetry/api" "^1.4.1"
-    "@opentelemetry/core" "^1.13.0"
-    "@opentelemetry/exporter-trace-otlp-grpc" "^0.39.1"
-    "@opentelemetry/resources" "^1.13.0"
-    "@opentelemetry/sdk-trace-base" "^1.13.0"
-    "@opentelemetry/sdk-trace-node" "^1.13.0"
-    "@opentelemetry/semantic-conventions" "^1.13.0"
-    chokidar "^3.5.3"
-    hash-wasm "^4.9.0"
-    inflection "^2.0.1"
-    memfs "^3.5.1"
-    oo-ascii-tree "^1.84.0"
-    ts-pattern "^4.3.0"
-    type-fest "^3.12.0"
-
-"@docsearch/css@3.5.2":
-  version "3.5.2"
-
-"@docsearch/react@^3.5.0":
-  version "3.5.2"
-  dependencies:
-    "@algolia/autocomplete-core" "1.9.3"
-    "@algolia/autocomplete-preset-algolia" "1.9.3"
-    "@docsearch/css" "3.5.2"
-    algoliasearch "^4.19.1"
-
-"@effect-ts/core@^0.60.5":
-  version "0.60.5"
-  dependencies:
-    "@effect-ts/system" "^0.57.5"
-
-"@effect-ts/otel-exporter-trace-otlp-grpc@^0.15.1":
-  version "0.15.1"
-  dependencies:
-    "@effect-ts/otel" "^0.15.1"
-
-"@effect-ts/otel-sdk-trace-node@^0.15.1":
-  version "0.15.1"
-  dependencies:
-    "@effect-ts/otel" "^0.15.1"
-
-"@effect-ts/otel@^0.15.1":
-  version "0.15.1"
-
-"@effect-ts/system@^0.57.5":
-  version "0.57.5"
-
 "@emotion/is-prop-valid@^0.8.2":
   version "0.8.8"
   dependencies:
@@ -1042,21 +840,10 @@
 "@emotion/memoize@0.7.4":
   version "0.7.4"
 
-"@esbuild-plugins/node-resolve@^0.1.4":
-  version "0.1.4"
-  dependencies:
-    "@types/resolve" "^1.17.1"
-    debug "^4.3.1"
-    escape-string-regexp "^4.0.0"
-    resolve "^1.19.0"
-
 "@esbuild/win32-x64@0.18.11":
   version "0.18.11"
   resolved "https://registry.npmmirror.com/@esbuild/win32-x64/-/win32-x64-0.18.11.tgz"
   integrity sha512-rQI4cjLHd2hGsM1LqgDI7oOCYbQ6IBOVsX9ejuRMSze0GqXUG2ekwiKkiBU1pRGSeCqFFHxTrcEydB2Hyoz9CA==
-
-"@esbuild/win32-x64@0.18.20":
-  version "0.18.20"
 
 "@eslint-community/eslint-utils@^4.2.0", "@eslint-community/eslint-utils@^4.4.0":
   version "4.4.0"
@@ -1082,27 +869,12 @@
 "@eslint/js@8.54.0":
   version "8.54.0"
 
-"@fal-works/esbuild-plugin-global-externals@^2.1.2":
-  version "2.1.2"
-
-"@giscus/react@^2.3.0":
-  version "2.3.0"
+"@giscus/react@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.npmmirror.com/@giscus/react/-/react-2.4.0.tgz"
+  integrity sha512-y8d8qiZ2sBuaXRcgn/ZWfMlRs9bx26p62BU/HEKQQ+IfHo3B/kglgPjX/IqudwlX+DOlHUl1NvtFo9C8Eqo0eQ==
   dependencies:
-    giscus "^1.3.0"
-
-"@grpc/grpc-js@^1.7.1":
-  version "1.9.11"
-  dependencies:
-    "@grpc/proto-loader" "^0.7.8"
-    "@types/node" ">=12.12.47"
-
-"@grpc/proto-loader@^0.7.8":
-  version "0.7.10"
-  dependencies:
-    lodash.camelcase "^4.3.0"
-    long "^5.0.0"
-    protobufjs "^7.2.4"
-    yargs "^17.7.2"
+    giscus "^1.4.0"
 
 "@humanwhocodes/config-array@^0.11.13":
   version "0.11.13"
@@ -1139,53 +911,17 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@js-temporal/polyfill@^0.4.4":
-  version "0.4.4"
-  dependencies:
-    jsbi "^4.3.0"
-    tslib "^2.4.1"
-
-"@lit-labs/ssr-dom-shim@^1.0.0", "@lit-labs/ssr-dom-shim@^1.1.0":
+"@lit-labs/ssr-dom-shim@^1.1.2":
   version "1.1.2"
+  resolved "https://registry.npmmirror.com/@lit-labs/ssr-dom-shim/-/ssr-dom-shim-1.1.2.tgz"
+  integrity sha512-jnOD+/+dSrfTWYfSXBXlo5l5f0q1UuJo3tkbMDCYA2lKUYq79jaxqtGEvnRoh049nt1vdo1+45RinipU6FGY2g==
 
-"@lit/reactive-element@^1.3.0", "@lit/reactive-element@^1.6.0":
-  version "1.6.3"
+"@lit/reactive-element@^2.0.0":
+  version "2.0.3"
+  resolved "https://registry.npmmirror.com/@lit/reactive-element/-/reactive-element-2.0.3.tgz"
+  integrity sha512-e067EuTNNgOHm1tZcc0Ia7TCzD/9ZpoPegHKgesrGK6pSDRGkGDAQbYuQclqLPIoJ9eC8Kb9mYtGryWcM5AywA==
   dependencies:
-    "@lit-labs/ssr-dom-shim" "^1.0.0"
-
-"@mailchimp/mailchimp_marketing@^3.0.80":
-  version "3.0.80"
-  dependencies:
-    dotenv "^8.2.0"
-    superagent "3.8.1"
-
-"@mdx-js/esbuild@^2.0.0":
-  version "2.3.0"
-  dependencies:
-    "@mdx-js/mdx" "^2.0.0"
-    node-fetch "^3.0.0"
-    vfile "^5.0.0"
-
-"@mdx-js/mdx@^2.0.0":
-  version "2.3.0"
-  dependencies:
-    "@types/estree-jsx" "^1.0.0"
-    "@types/mdx" "^2.0.0"
-    estree-util-build-jsx "^2.0.0"
-    estree-util-is-identifier-name "^2.0.0"
-    estree-util-to-js "^1.1.0"
-    estree-walker "^3.0.0"
-    hast-util-to-estree "^2.0.0"
-    markdown-extensions "^1.0.0"
-    periscopic "^3.0.0"
-    remark-mdx "^2.0.0"
-    remark-parse "^10.0.0"
-    remark-rehype "^10.0.0"
-    unified "^10.0.0"
-    unist-util-position-from-estree "^1.0.0"
-    unist-util-stringify-position "^3.0.0"
-    unist-util-visit "^4.0.0"
-    vfile "^5.0.0"
+    "@lit-labs/ssr-dom-shim" "^1.1.2"
 
 "@motionone/animation@^10.17.0":
   version "10.17.0"
@@ -1271,103 +1007,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@opentelemetry/api-logs@0.39.1":
-  version "0.39.1"
-  dependencies:
-    "@opentelemetry/api" "^1.0.0"
-
-"@opentelemetry/api@^1.0.0", "@opentelemetry/api@^1.4.1":
-  version "1.4.1"
-
-"@opentelemetry/context-async-hooks@1.13.0":
-  version "1.13.0"
-
-"@opentelemetry/core@^1.13.0", "@opentelemetry/core@1.13.0":
-  version "1.13.0"
-  dependencies:
-    "@opentelemetry/semantic-conventions" "1.13.0"
-
-"@opentelemetry/exporter-trace-otlp-grpc@^0.39.1":
-  version "0.39.1"
-  dependencies:
-    "@grpc/grpc-js" "^1.7.1"
-    "@opentelemetry/core" "1.13.0"
-    "@opentelemetry/otlp-grpc-exporter-base" "0.39.1"
-    "@opentelemetry/otlp-transformer" "0.39.1"
-    "@opentelemetry/resources" "1.13.0"
-    "@opentelemetry/sdk-trace-base" "1.13.0"
-
-"@opentelemetry/otlp-exporter-base@0.39.1":
-  version "0.39.1"
-  dependencies:
-    "@opentelemetry/core" "1.13.0"
-
-"@opentelemetry/otlp-grpc-exporter-base@0.39.1":
-  version "0.39.1"
-  dependencies:
-    "@grpc/grpc-js" "^1.7.1"
-    "@opentelemetry/core" "1.13.0"
-    "@opentelemetry/otlp-exporter-base" "0.39.1"
-    protobufjs "^7.2.2"
-
-"@opentelemetry/otlp-transformer@0.39.1":
-  version "0.39.1"
-  dependencies:
-    "@opentelemetry/api-logs" "0.39.1"
-    "@opentelemetry/core" "1.13.0"
-    "@opentelemetry/resources" "1.13.0"
-    "@opentelemetry/sdk-logs" "0.39.1"
-    "@opentelemetry/sdk-metrics" "1.13.0"
-    "@opentelemetry/sdk-trace-base" "1.13.0"
-
-"@opentelemetry/propagator-b3@1.13.0":
-  version "1.13.0"
-  dependencies:
-    "@opentelemetry/core" "1.13.0"
-
-"@opentelemetry/propagator-jaeger@1.13.0":
-  version "1.13.0"
-  dependencies:
-    "@opentelemetry/core" "1.13.0"
-
-"@opentelemetry/resources@^1.13.0", "@opentelemetry/resources@1.13.0":
-  version "1.13.0"
-  dependencies:
-    "@opentelemetry/core" "1.13.0"
-    "@opentelemetry/semantic-conventions" "1.13.0"
-
-"@opentelemetry/sdk-logs@0.39.1":
-  version "0.39.1"
-  dependencies:
-    "@opentelemetry/core" "1.13.0"
-    "@opentelemetry/resources" "1.13.0"
-
-"@opentelemetry/sdk-metrics@1.13.0":
-  version "1.13.0"
-  dependencies:
-    "@opentelemetry/core" "1.13.0"
-    "@opentelemetry/resources" "1.13.0"
-    lodash.merge "4.6.2"
-
-"@opentelemetry/sdk-trace-base@^1.13.0", "@opentelemetry/sdk-trace-base@1.13.0":
-  version "1.13.0"
-  dependencies:
-    "@opentelemetry/core" "1.13.0"
-    "@opentelemetry/resources" "1.13.0"
-    "@opentelemetry/semantic-conventions" "1.13.0"
-
-"@opentelemetry/sdk-trace-node@^1.13.0":
-  version "1.13.0"
-  dependencies:
-    "@opentelemetry/context-async-hooks" "1.13.0"
-    "@opentelemetry/core" "1.13.0"
-    "@opentelemetry/propagator-b3" "1.13.0"
-    "@opentelemetry/propagator-jaeger" "1.13.0"
-    "@opentelemetry/sdk-trace-base" "1.13.0"
-    semver "^7.3.5"
-
-"@opentelemetry/semantic-conventions@^1.13.0", "@opentelemetry/semantic-conventions@1.13.0":
-  version "1.13.0"
+"@panva/hkdf@^1.0.2":
+  version "1.1.1"
+  resolved "https://registry.npmmirror.com/@panva/hkdf/-/hkdf-1.1.1.tgz"
+  integrity sha512-dhPeilub1NuIG0X5Kvhh9lH4iW3ZsHlnzwgwbOlgwQ2wG1IqFzsgHqmKPk3WzsdWAeaxKJxgM0+W433RmN45GA==
 
 "@pkgr/utils@^2.3.1":
   version "2.4.2"
@@ -1381,65 +1024,6 @@
 
 "@polka/url@^1.0.0-next.20":
   version "1.0.0-next.23"
-
-"@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
-  version "1.1.2"
-
-"@protobufjs/base64@^1.1.2":
-  version "1.1.2"
-
-"@protobufjs/codegen@^2.0.4":
-  version "2.0.4"
-
-"@protobufjs/eventemitter@^1.1.0":
-  version "1.1.0"
-
-"@protobufjs/fetch@^1.1.0":
-  version "1.1.0"
-  dependencies:
-    "@protobufjs/aspromise" "^1.1.1"
-    "@protobufjs/inquire" "^1.1.0"
-
-"@protobufjs/float@^1.0.2":
-  version "1.0.2"
-
-"@protobufjs/inquire@^1.1.0":
-  version "1.1.0"
-
-"@protobufjs/path@^1.1.2":
-  version "1.1.2"
-
-"@protobufjs/pool@^1.1.0":
-  version "1.1.0"
-
-"@protobufjs/utf8@^1.1.0":
-  version "1.1.0"
-
-"@radix-ui/react-compose-refs@1.0.1":
-  version "1.0.1"
-  dependencies:
-    "@babel/runtime" "^7.13.10"
-
-"@radix-ui/react-portal@^1.0.1":
-  version "1.0.4"
-  dependencies:
-    "@babel/runtime" "^7.13.10"
-    "@radix-ui/react-primitive" "1.0.3"
-
-"@radix-ui/react-primitive@1.0.3":
-  version "1.0.3"
-  dependencies:
-    "@babel/runtime" "^7.13.10"
-    "@radix-ui/react-slot" "1.0.2"
-
-"@radix-ui/react-slot@1.0.2":
-  version "1.0.2"
-  dependencies:
-    "@babel/runtime" "^7.13.10"
-    "@radix-ui/react-compose-refs" "1.0.1"
-
-"@reach/observe-rect@^1.1.0":
-  version "1.2.0"
 
 "@rushstack/eslint-patch@^1.3.3":
   version "1.5.1"
@@ -1540,38 +1124,13 @@
     lodash.merge "^4.6.2"
     postcss-selector-parser "6.0.10"
 
-"@tanstack/query-core@5.17.15":
-  version "5.17.15"
-  resolved "https://registry.npmmirror.com/@tanstack/query-core/-/query-core-5.17.15.tgz"
-  integrity sha512-QURxpu77/ICA4d61aPvV7EcJ2MwmksxUejKBaq/xLcO2TUJAlXf4PFKHC/WxnVFI/7F1jeLx85AO3Vpk0+uBXw==
-
-"@tanstack/react-query@^5.17.15":
-  version "5.17.15"
-  resolved "https://registry.npmmirror.com/@tanstack/react-query/-/react-query-5.17.15.tgz"
-  integrity sha512-9qur91mOihaUN7pXm6ioDtS+4qgkBcCiIaZyvi3lZNcQZsrMGCYZ+eP3hiFrV4khoJyJrFUX1W0NcCVlgwNZxQ==
-  dependencies:
-    "@tanstack/query-core" "5.17.15"
-
 "@trysound/sax@0.2.0":
   version "0.2.0"
-
-"@types/acorn@^4.0.0":
-  version "4.0.6"
-  dependencies:
-    "@types/estree" "*"
 
 "@types/debug@^4.0.0":
   version "4.1.12"
   dependencies:
     "@types/ms" "*"
-
-"@types/estree-jsx@^1.0.0":
-  version "1.0.3"
-  dependencies:
-    "@types/estree" "*"
-
-"@types/estree@*", "@types/estree@^1.0.0":
-  version "1.0.5"
 
 "@types/hast@^2.0.0":
   version "2.3.8"
@@ -1595,19 +1154,18 @@
   dependencies:
     "@types/unist" "^2"
 
-"@types/mdx@^2.0.0", "@types/mdx@^2.0.5":
+"@types/mdx@^2.0.5":
   version "2.0.10"
 
 "@types/ms@*":
   version "0.7.34"
 
-"@types/node@>=12.12.47", "@types/node@>=13.7.0":
-  version "20.9.3"
+"@types/node@20.11.6":
+  version "20.11.6"
+  resolved "https://registry.npmmirror.com/@types/node/-/node-20.11.6.tgz"
+  integrity sha512-+EOokTnksGVgip2PbYbr3xnR7kZigh4LbybAfBAw5BpnQ+FqBYUsvCEjYd70IXKlbohQ64mzEYmMtlWUY8q//Q==
   dependencies:
     undici-types "~5.26.4"
-
-"@types/parse5@^6.0.0":
-  version "6.0.3"
 
 "@types/prismjs@^1.0.0":
   version "1.26.3"
@@ -1622,9 +1180,6 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/resolve@^1.17.1":
-  version "1.20.6"
-
 "@types/scheduler@*":
   version "0.16.7"
 
@@ -1633,6 +1188,8 @@
 
 "@types/trusted-types@^2.0.2":
   version "2.0.7"
+  resolved "https://registry.npmmirror.com/@types/trusted-types/-/trusted-types-2.0.7.tgz"
+  integrity sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==
 
 "@types/unist@^2", "@types/unist@^2.0.0":
   version "2.0.10"
@@ -1709,13 +1266,13 @@
 "@ungap/structured-clone@^1.2.0":
   version "1.2.0"
 
-acorn-jsx@^5.0.0, acorn-jsx@^5.3.2:
+acorn-jsx@^5.3.2:
   version "5.3.2"
 
 acorn-walk@^8.0.0:
   version "8.3.0"
 
-acorn@^8.0.0, acorn@^8.0.4, acorn@^8.9.0:
+acorn@^8.0.4, acorn@^8.9.0:
   version "8.11.2"
 
 ajv@^6.12.4:
@@ -1725,24 +1282,6 @@ ajv@^6.12.4:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
-
-algoliasearch@^4.19.1:
-  version "4.20.0"
-  dependencies:
-    "@algolia/cache-browser-local-storage" "4.20.0"
-    "@algolia/cache-common" "4.20.0"
-    "@algolia/cache-in-memory" "4.20.0"
-    "@algolia/client-account" "4.20.0"
-    "@algolia/client-analytics" "4.20.0"
-    "@algolia/client-common" "4.20.0"
-    "@algolia/client-personalization" "4.20.0"
-    "@algolia/client-search" "4.20.0"
-    "@algolia/logger-common" "4.20.0"
-    "@algolia/logger-console" "4.20.0"
-    "@algolia/requester-browser-xhr" "4.20.0"
-    "@algolia/requester-common" "4.20.0"
-    "@algolia/requester-node-http" "4.20.0"
-    "@algolia/transporter" "4.20.0"
 
 ansi-escapes@^5.0.0:
   version "5.0.0"
@@ -1760,7 +1299,7 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-ansi-styles@^4.0.0, ansi-styles@^4.1.0:
+ansi-styles@^4.1.0:
   version "4.3.0"
   dependencies:
     color-convert "^2.0.1"
@@ -1813,9 +1352,6 @@ array-includes@^3.1.6, array-includes@^3.1.7:
     get-intrinsic "^1.2.1"
     is-string "^1.0.7"
 
-array-timsort@^1.0.3:
-  version "1.0.3"
-
 array-union@^2.1.0:
   version "2.1.0"
 
@@ -1866,9 +1402,6 @@ arraybuffer.prototype.slice@^1.0.2:
 
 ast-types-flow@^0.0.8:
   version "0.0.8"
-
-astring@^1.8.0:
-  version "1.8.6"
 
 asynciterator.prototype@^1.0.0:
   version "1.0.0"
@@ -1984,9 +1517,6 @@ browserslist@^4.21.10, browserslist@^4.21.9, browserslist@^4.22.1:
     node-releases "^2.0.13"
     update-browserslist-db "^1.0.13"
 
-buffer-from@^1.0.0:
-  version "1.1.2"
-
 buffer@^5.7.1:
   version "5.7.1"
   dependencies:
@@ -2012,12 +1542,6 @@ call-bind@^1.0.0, call-bind@^1.0.2, call-bind@^1.0.4, call-bind@^1.0.5:
 
 callsites@^3.0.0:
   version "3.1.0"
-
-camel-case@^4.1.2:
-  version "4.1.2"
-  dependencies:
-    pascal-case "^3.1.2"
-    tslib "^2.0.3"
 
 camelcase-css@^2.0.1:
   version "2.0.1"
@@ -2048,9 +1572,6 @@ chalk@5.3.0:
   version "5.3.0"
   resolved "https://registry.npmmirror.com/chalk/-/chalk-5.3.0.tgz"
   integrity sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==
-
-character-entities-html4@^2.0.0:
-  version "2.1.0"
 
 character-entities-legacy@^3.0.0:
   version "3.0.0"
@@ -2096,27 +1617,6 @@ cli-truncate@^3.1.0:
 client-only@0.0.1:
   version "0.0.1"
 
-clipanion@^3.2.1:
-  version "3.2.1"
-  dependencies:
-    typanion "^3.8.0"
-
-cliui@^7.0.2:
-  version "7.0.4"
-  resolved "https://registry.npmmirror.com/cliui/-/cliui-7.0.4.tgz"
-  integrity sha512-OcRE68cOsVMXp1Yvonl/fzkQOyjLSu/8bhPDfQt0e0/Eb283TKP20Fs2MqoPsr9SwA595rRCA+QMzYc9nBP+JQ==
-  dependencies:
-    string-width "^4.2.0"
-    strip-ansi "^6.0.0"
-    wrap-ansi "^7.0.0"
-
-cliui@^8.0.1:
-  version "8.0.1"
-  dependencies:
-    string-width "^4.2.0"
-    strip-ansi "^6.0.1"
-    wrap-ansi "^7.0.0"
-
 color-convert@^1.9.0:
   version "1.9.3"
   dependencies:
@@ -2136,7 +1636,7 @@ color-name@1.1.3:
 colorette@^2.0.20:
   version "2.0.20"
 
-combined-stream@^1.0.6, combined-stream@^1.0.8:
+combined-stream@^1.0.8:
   version "1.0.8"
   dependencies:
     delayed-stream "~1.0.0"
@@ -2162,55 +1662,21 @@ commander@11.0.0:
   resolved "https://registry.npmmirror.com/commander/-/commander-11.0.0.tgz"
   integrity sha512-9HMlXtt/BNoYr8ooyjjNRdIilOTkVJXB+GhxMTtOKwk0R4j4lS4NpjuqmRxroBfnfTSHQIHQB7wryHhXarNjmQ==
 
-comment-json@^4.2.3:
-  version "4.2.3"
-  dependencies:
-    array-timsort "^1.0.3"
-    core-util-is "^1.0.3"
-    esprima "^4.0.1"
-    has-own-prop "^2.0.0"
-    repeat-string "^1.6.1"
-
-component-emitter@^1.2.0:
-  version "1.3.1"
-
 concat-map@0.0.1:
   version "0.0.1"
-
-contentlayer@^0.3.4, contentlayer@0.3.4:
-  version "0.3.4"
-  dependencies:
-    "@contentlayer/cli" "0.3.4"
-    "@contentlayer/client" "0.3.4"
-    "@contentlayer/core" "0.3.4"
-    "@contentlayer/source-files" "0.3.4"
-    "@contentlayer/source-remote-files" "0.3.4"
-    "@contentlayer/utils" "0.3.4"
 
 convert-source-map@^2.0.0:
   version "2.0.0"
 
-cookiejar@^2.1.0:
-  version "2.1.4"
-
-copyfiles@^2.4.1:
-  version "2.4.1"
-  dependencies:
-    glob "^7.0.5"
-    minimatch "^3.0.3"
-    mkdirp "^1.0.4"
-    noms "0.0.0"
-    through2 "^2.0.1"
-    untildify "^4.0.0"
-    yargs "^16.1.0"
+cookie@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.npmmirror.com/cookie/-/cookie-0.5.0.tgz"
+  integrity sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==
 
 core-js-compat@^3.31.0, core-js-compat@^3.33.1:
   version "3.33.3"
   dependencies:
     browserslist "^4.22.1"
-
-core-util-is@^1.0.3, core-util-is@~1.0.0:
-  version "1.0.3"
 
 cosmiconfig@^8.1.3:
   version "8.3.6"
@@ -2278,35 +1744,15 @@ csstype@^3.0.2:
 damerau-levenshtein@^1.0.8:
   version "1.0.8"
 
-data-uri-to-buffer@^4.0.0:
-  version "4.0.1"
-
-debug@^3.1.0:
-  version "3.2.7"
-  dependencies:
-    ms "^2.1.1"
-
-debug@^3.2.6:
-  version "3.2.7"
-  resolved "https://registry.npmmirror.com/debug/-/debug-3.2.7.tgz"
-  integrity sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==
-  dependencies:
-    ms "^2.1.1"
-
 debug@^3.2.7:
   version "3.2.7"
   dependencies:
     ms "^2.1.1"
 
-debug@^4.0.0, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2, debug@^4.3.4, debug@4.3.4:
+debug@^4.0.0, debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.4, debug@4.3.4:
   version "4.3.4"
   dependencies:
     ms "2.1.2"
-
-debug@2:
-  version "2.6.9"
-  dependencies:
-    ms "2.0.0"
 
 decode-named-character-reference@^1.0.0:
   version "1.0.2"
@@ -2413,9 +1859,6 @@ dot-case@^3.0.4:
     no-case "^3.0.4"
     tslib "^2.0.3"
 
-dotenv@^8.2.0:
-  version "8.6.0"
-
 duplexer@^0.1.2:
   version "0.1.2"
 
@@ -2424,9 +1867,6 @@ eastasianwidth@^0.2.0:
 
 electron-to-chromium@^1.4.535:
   version "1.4.589"
-
-emoji-regex@^8.0.0:
-  version "8.0.0"
 
 emoji-regex@^9.2.2:
   version "9.2.2"
@@ -2524,32 +1964,6 @@ es-to-primitive@^1.2.1:
     is-callable "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
-
-"esbuild@0.17.x || 0.18.x":
-  version "0.18.20"
-  optionalDependencies:
-    "@esbuild/android-arm" "0.18.20"
-    "@esbuild/android-arm64" "0.18.20"
-    "@esbuild/android-x64" "0.18.20"
-    "@esbuild/darwin-arm64" "0.18.20"
-    "@esbuild/darwin-x64" "0.18.20"
-    "@esbuild/freebsd-arm64" "0.18.20"
-    "@esbuild/freebsd-x64" "0.18.20"
-    "@esbuild/linux-arm" "0.18.20"
-    "@esbuild/linux-arm64" "0.18.20"
-    "@esbuild/linux-ia32" "0.18.20"
-    "@esbuild/linux-loong64" "0.18.20"
-    "@esbuild/linux-mips64el" "0.18.20"
-    "@esbuild/linux-ppc64" "0.18.20"
-    "@esbuild/linux-riscv64" "0.18.20"
-    "@esbuild/linux-s390x" "0.18.20"
-    "@esbuild/linux-x64" "0.18.20"
-    "@esbuild/netbsd-x64" "0.18.20"
-    "@esbuild/openbsd-x64" "0.18.20"
-    "@esbuild/sunos-x64" "0.18.20"
-    "@esbuild/win32-arm64" "0.18.20"
-    "@esbuild/win32-ia32" "0.18.20"
-    "@esbuild/win32-x64" "0.18.20"
 
 esbuild@0.18.11:
   version "0.18.11"
@@ -2756,7 +2170,7 @@ espree@^9.6.0, espree@^9.6.1:
     acorn-jsx "^5.3.2"
     eslint-visitor-keys "^3.4.1"
 
-esprima@^4.0.0, esprima@^4.0.1:
+esprima@^4.0.0:
   version "4.0.1"
 
 esquery@^1.4.2:
@@ -2771,47 +2185,6 @@ esrecurse@^4.3.0:
 
 estraverse@^5.1.0, estraverse@^5.2.0, estraverse@^5.3.0:
   version "5.3.0"
-
-estree-util-attach-comments@^2.0.0:
-  version "2.1.1"
-  dependencies:
-    "@types/estree" "^1.0.0"
-
-estree-util-build-jsx@^2.0.0:
-  version "2.2.2"
-  dependencies:
-    "@types/estree-jsx" "^1.0.0"
-    estree-util-is-identifier-name "^2.0.0"
-    estree-walker "^3.0.0"
-
-estree-util-is-identifier-name@^1.0.0:
-  version "1.1.0"
-
-estree-util-is-identifier-name@^2.0.0:
-  version "2.1.0"
-
-estree-util-to-js@^1.1.0:
-  version "1.2.0"
-  dependencies:
-    "@types/estree-jsx" "^1.0.0"
-    astring "^1.8.0"
-    source-map "^0.7.0"
-
-estree-util-value-to-estree@^1.0.0:
-  version "1.3.0"
-  dependencies:
-    is-plain-obj "^3.0.0"
-
-estree-util-visit@^1.0.0:
-  version "1.2.1"
-  dependencies:
-    "@types/estree-jsx" "^1.0.0"
-    "@types/unist" "^2.0.0"
-
-estree-walker@^3.0.0:
-  version "3.0.3"
-  dependencies:
-    "@types/estree" "^1.0.0"
 
 esutils@^2.0.2:
   version "2.0.3"
@@ -2859,10 +2232,7 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
 fast-diff@^1.1.2:
   version "1.3.0"
 
-fast-equals@^2.0.3:
-  version "2.0.4"
-
-fast-glob@^3.2.12, fast-glob@^3.2.9, fast-glob@^3.3.0, fast-glob@^3.3.1:
+fast-glob@^3.2.9, fast-glob@^3.3.0, fast-glob@^3.3.1:
   version "3.3.2"
   dependencies:
     "@nodelib/fs.stat" "^2.0.2"
@@ -2881,17 +2251,6 @@ fastq@^1.6.0:
   version "1.15.0"
   dependencies:
     reusify "^1.0.4"
-
-fault@^2.0.0:
-  version "2.0.1"
-  dependencies:
-    format "^0.2.0"
-
-fetch-blob@^3.1.2, fetch-blob@^3.1.4:
-  version "3.2.0"
-  dependencies:
-    node-domexception "^1.0.0"
-    web-streams-polyfill "^3.0.3"
 
 fetch-ponyfill@^7.1.0:
   version "7.1.0"
@@ -2934,13 +2293,6 @@ for-each@^0.3.3:
   dependencies:
     is-callable "^1.1.3"
 
-form-data@^2.3.1:
-  version "2.5.1"
-  dependencies:
-    asynckit "^0.4.0"
-    combined-stream "^1.0.6"
-    mime-types "^2.1.12"
-
 form-data@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmmirror.com/form-data/-/form-data-4.0.0.tgz"
@@ -2949,17 +2301,6 @@ form-data@^4.0.0:
     asynckit "^0.4.0"
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
-
-format@^0.2.0:
-  version "0.2.2"
-
-formdata-polyfill@^4.0.10:
-  version "4.0.10"
-  dependencies:
-    fetch-blob "^3.1.2"
-
-formidable@^1.1.1:
-  version "1.2.6"
 
 fraction.js@^4.3.6:
   version "4.3.7"
@@ -2974,9 +2315,6 @@ framer-motion@^7.10.3:
     tslib "2.4.0"
   optionalDependencies:
     "@emotion/is-prop-valid" "^0.8.2"
-
-fs-monkey@^1.0.4:
-  version "1.0.5"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -2995,16 +2333,8 @@ function.prototype.name@^1.1.5, function.prototype.name@^1.1.6:
 functions-have-names@^1.2.3:
   version "1.2.3"
 
-fuse.js@^6.6.2:
-  version "6.6.2"
-  resolved "https://registry.npmmirror.com/fuse.js/-/fuse.js-6.6.2.tgz"
-  integrity sha512-cJaJkxCCxC8qIIcPBF9yGxY0W/tVZS3uEISDxhYIdtk8OL93pe+6Zj7LjCqVV4dzbqcriOZ+kQ/NE4RXZHsIGA==
-
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
-
-get-caller-file@^2.0.5:
-  version "2.0.5"
 
 get-intrinsic@^1.0.2, get-intrinsic@^1.1.1, get-intrinsic@^1.1.3, get-intrinsic@^1.2.0, get-intrinsic@^1.2.1, get-intrinsic@^1.2.2:
   version "1.2.2"
@@ -3028,10 +2358,12 @@ get-tsconfig@^4.5.0:
   dependencies:
     resolve-pkg-maps "^1.0.0"
 
-giscus@^1.3.0:
-  version "1.3.0"
+giscus@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npmmirror.com/giscus/-/giscus-1.4.0.tgz"
+  integrity sha512-Pll+pcclTx47NcFDw8nuka2Ja85Gc4XWpzSgL0rszOQaMQRQIV8UMR+zP4a+/N3tV2TXc1SZ537kWlsN6EsAaw==
   dependencies:
-    lit "^2.7.5"
+    lit "^3.1.0"
 
 github-slugger@^1.4.0:
   version "1.5.0"
@@ -3054,7 +2386,7 @@ glob-parent@^6.0.2:
 glob-to-regexp@^0.4.1:
   version "0.4.1"
 
-glob@^7.0.5, glob@^7.1.3:
+glob@^7.1.3:
   version "7.2.3"
   dependencies:
     fs.realpath "^1.0.0"
@@ -3120,7 +2452,7 @@ graceful-fs@^4.1.2, graceful-fs@^4.2.4:
 graphemer@^1.4.0:
   version "1.4.0"
 
-gray-matter@^4.0.2, gray-matter@^4.0.3:
+gray-matter@^4.0.2:
   version "4.0.3"
   dependencies:
     js-yaml "^3.13.1"
@@ -3142,9 +2474,6 @@ has-flag@^3.0.0:
 has-flag@^4.0.0:
   version "4.0.0"
 
-has-own-prop@^2.0.0:
-  version "2.0.0"
-
 has-property-descriptors@^1.0.0:
   version "1.0.1"
   dependencies:
@@ -3160,9 +2489,6 @@ has-tostringtag@^1.0.0:
   version "1.0.0"
   dependencies:
     has-symbols "^1.0.2"
-
-hash-wasm@^4.9.0:
-  version "4.11.0"
 
 hasown@^2.0.0:
   version "2.0.0"
@@ -3257,21 +2583,6 @@ hast-util-parse-selector@^3.0.0:
   dependencies:
     "@types/hast" "^2.0.0"
 
-hast-util-raw@^7.0.0:
-  version "7.2.3"
-  dependencies:
-    "@types/hast" "^2.0.0"
-    "@types/parse5" "^6.0.0"
-    hast-util-from-parse5 "^7.0.0"
-    hast-util-to-parse5 "^7.0.0"
-    html-void-elements "^2.0.0"
-    parse5 "^6.0.0"
-    unist-util-position "^4.0.0"
-    unist-util-visit "^4.0.0"
-    vfile "^5.0.0"
-    web-namespaces "^2.0.0"
-    zwitch "^2.0.0"
-
 hast-util-select@^5.0.0:
   version "5.0.5"
   dependencies:
@@ -3289,50 +2600,6 @@ hast-util-select@^5.0.0:
     property-information "^6.0.0"
     space-separated-tokens "^2.0.0"
     unist-util-visit "^4.0.0"
-    zwitch "^2.0.0"
-
-hast-util-to-estree@^2.0.0:
-  version "2.3.3"
-  dependencies:
-    "@types/estree" "^1.0.0"
-    "@types/estree-jsx" "^1.0.0"
-    "@types/hast" "^2.0.0"
-    "@types/unist" "^2.0.0"
-    comma-separated-tokens "^2.0.0"
-    estree-util-attach-comments "^2.0.0"
-    estree-util-is-identifier-name "^2.0.0"
-    hast-util-whitespace "^2.0.0"
-    mdast-util-mdx-expression "^1.0.0"
-    mdast-util-mdxjs-esm "^1.0.0"
-    property-information "^6.0.0"
-    space-separated-tokens "^2.0.0"
-    style-to-object "^0.4.1"
-    unist-util-position "^4.0.0"
-    zwitch "^2.0.0"
-
-hast-util-to-html@^8.0.0:
-  version "8.0.4"
-  dependencies:
-    "@types/hast" "^2.0.0"
-    "@types/unist" "^2.0.0"
-    ccount "^2.0.0"
-    comma-separated-tokens "^2.0.0"
-    hast-util-raw "^7.0.0"
-    hast-util-whitespace "^2.0.0"
-    html-void-elements "^2.0.0"
-    property-information "^6.0.0"
-    space-separated-tokens "^2.0.0"
-    stringify-entities "^4.0.0"
-    zwitch "^2.0.4"
-
-hast-util-to-parse5@^7.0.0:
-  version "7.1.0"
-  dependencies:
-    "@types/hast" "^2.0.0"
-    comma-separated-tokens "^2.0.0"
-    property-information "^6.0.0"
-    space-separated-tokens "^2.0.0"
-    web-namespaces "^2.0.0"
     zwitch "^2.0.0"
 
 hast-util-to-string@^2.0.0:
@@ -3376,9 +2643,6 @@ html-enumerated-attributes@^0.1.0:
 html-url-attributes@^2.0.0:
   version "2.0.0"
 
-html-void-elements@^2.0.0:
-  version "2.0.1"
-
 human-signals@^2.1.0:
   version "2.1.0"
 
@@ -3387,11 +2651,6 @@ human-signals@^4.3.0:
 
 husky@^8.0.0:
   version "8.0.3"
-
-iconv-lite@^0.4.4:
-  version "0.4.24"
-  dependencies:
-    safer-buffer ">= 2.1.2 < 3"
 
 ieee754@^1.1.13:
   version "1.2.1"
@@ -3404,9 +2663,6 @@ image-size@1.0.0:
   dependencies:
     queue "6.0.2"
 
-imagescript@^1.2.16:
-  version "1.2.16"
-
 import-fresh@^3.2.1, import-fresh@^3.3.0:
   version "3.3.0"
   dependencies:
@@ -3416,20 +2672,14 @@ import-fresh@^3.2.1, import-fresh@^3.3.0:
 imurmurhash@^0.1.4:
   version "0.1.4"
 
-inflection@^2.0.1:
-  version "2.0.1"
-
 inflight@^1.0.4:
   version "1.0.6"
   dependencies:
     once "^1.3.0"
     wrappy "1"
 
-inherits@^2.0.1, inherits@~2.0.1, inherits@~2.0.3, inherits@2:
+inherits@~2.0.3, inherits@2:
   version "2.0.4"
-
-inline-style-parser@0.1.1:
-  version "0.1.1"
 
 internal-slot@^1.0.5:
   version "1.0.6"
@@ -3514,9 +2764,6 @@ is-finalizationregistry@^1.0.2:
   dependencies:
     call-bind "^1.0.2"
 
-is-fullwidth-code-point@^3.0.0:
-  version "3.0.0"
-
 is-fullwidth-code-point@^4.0.0:
   version "4.0.0"
 
@@ -3555,16 +2802,8 @@ is-number@^7.0.0:
 is-path-inside@^3.0.3:
   version "3.0.3"
 
-is-plain-obj@^3.0.0:
-  version "3.0.0"
-
 is-plain-obj@^4.0.0:
   version "4.1.0"
-
-is-reference@^3.0.0:
-  version "3.0.2"
-  dependencies:
-    "@types/estree" "*"
 
 is-regex@^1.1.4:
   version "1.1.4"
@@ -3623,14 +2862,6 @@ is-wsl@^2.2.0:
 isarray@^2.0.5:
   version "2.0.5"
 
-isarray@~1.0.0:
-  version "1.0.0"
-
-isarray@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.npmmirror.com/isarray/-/isarray-0.0.1.tgz"
-  integrity sha512-D2S+3GLxWH+uhrNEcoh/fnmYeP8E8/zHl644d/jdA0g2uyXvy3sb0qxotE+ne0LtccHknQzWwZEzhak7oJ0COQ==
-
 isexe@^2.0.0:
   version "2.0.0"
 
@@ -3646,6 +2877,11 @@ iterator.prototype@^1.1.2:
 jiti@^1.19.1:
   version "1.21.0"
 
+jose@^4.11.4, jose@^4.15.4:
+  version "4.15.4"
+  resolved "https://registry.npmmirror.com/jose/-/jose-4.15.4.tgz"
+  integrity sha512-W+oqK4H+r5sITxfxpSU+MMdr/YSWGvgZMQDIsNoBDGGy4i7GBPTtvFKibQzW06n3U3TqHjhvBJsirShsEJ6eeQ==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
 
@@ -3655,13 +2891,10 @@ js-yaml@^3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-js-yaml@^4.0.0, js-yaml@^4.1.0, js-yaml@4.1.0:
+js-yaml@^4.1.0:
   version "4.1.0"
   dependencies:
     argparse "^2.0.1"
-
-jsbi@^4.3.0:
-  version "4.3.0"
 
 jsesc@^2.5.1:
   version "2.5.2"
@@ -3701,15 +2934,6 @@ katex@^0.16.0:
   version "0.16.9"
   dependencies:
     commander "^8.3.0"
-
-kbar@0.1.0-beta.44:
-  version "0.1.0-beta.44"
-  dependencies:
-    "@radix-ui/react-portal" "^1.0.1"
-    fast-equals "^2.0.3"
-    fuse.js "^6.6.2"
-    react-virtual "^2.8.2"
-    tiny-invariant "^1.2.0"
 
 keyv@^4.5.3:
   version "4.5.4"
@@ -3769,32 +2993,35 @@ listr2@6.6.1:
     rfdc "^1.3.0"
     wrap-ansi "^8.1.0"
 
-lit-element@^3.3.0:
-  version "3.3.3"
+lit-element@^4.0.0:
+  version "4.0.3"
+  resolved "https://registry.npmmirror.com/lit-element/-/lit-element-4.0.3.tgz"
+  integrity sha512-2vhidmC7gGLfnVx41P8UZpzyS0Fb8wYhS5RCm16cMW3oERO0Khd3EsKwtRpOnttuByI5rURjT2dfoA7NlInCNw==
   dependencies:
-    "@lit-labs/ssr-dom-shim" "^1.1.0"
-    "@lit/reactive-element" "^1.3.0"
-    lit-html "^2.8.0"
+    "@lit-labs/ssr-dom-shim" "^1.1.2"
+    "@lit/reactive-element" "^2.0.0"
+    lit-html "^3.1.0"
 
-lit-html@^2.8.0:
-  version "2.8.0"
+lit-html@^3.1.0:
+  version "3.1.1"
+  resolved "https://registry.npmmirror.com/lit-html/-/lit-html-3.1.1.tgz"
+  integrity sha512-x/EwfGk2D/f4odSFM40hcGumzqoKv0/SUh6fBO+1Ragez81APrcAMPo1jIrCDd9Sn+Z4CT867HWKViByvkDZUA==
   dependencies:
     "@types/trusted-types" "^2.0.2"
 
-lit@^2.7.5:
-  version "2.8.0"
+lit@^3.1.0:
+  version "3.1.1"
+  resolved "https://registry.npmmirror.com/lit/-/lit-3.1.1.tgz"
+  integrity sha512-hF1y4K58+Gqrz+aAPS0DNBwPqPrg6P04DuWK52eMkt/SM9Qe9keWLcFgRcEKOLuDlRZlDsDbNL37Vr7ew1VCuw==
   dependencies:
-    "@lit/reactive-element" "^1.6.0"
-    lit-element "^3.3.0"
-    lit-html "^2.8.0"
+    "@lit/reactive-element" "^2.0.0"
+    lit-element "^4.0.0"
+    lit-html "^3.1.0"
 
 locate-path@^6.0.0:
   version "6.0.0"
   dependencies:
     p-locate "^5.0.0"
-
-lodash.camelcase@^4.3.0:
-  version "4.3.0"
 
 lodash.castarray@^4.4.0:
   version "4.4.0"
@@ -3805,7 +3032,7 @@ lodash.debounce@^4.0.8:
 lodash.isplainobject@^4.0.6:
   version "4.0.6"
 
-lodash.merge@^4.6.2, lodash.merge@4.6.2:
+lodash.merge@^4.6.2:
   version "4.6.2"
 
 lodash@^4.17.20:
@@ -3819,9 +3046,6 @@ log-update@^5.0.1:
     slice-ansi "^5.0.0"
     strip-ansi "^7.0.1"
     wrap-ansi "^8.0.1"
-
-long@^5.0.0:
-  version "5.2.3"
 
 longest-streak@^3.0.0:
   version "3.1.0"
@@ -3843,11 +3067,10 @@ lru-cache@^5.1.1:
 
 lru-cache@^6.0.0:
   version "6.0.0"
+  resolved "https://registry.npmmirror.com/lru-cache/-/lru-cache-6.0.0.tgz"
+  integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
-
-markdown-extensions@^1.0.0:
-  version "1.1.1"
 
 markdown-table@^3.0.0:
   version "3.0.3"
@@ -3862,13 +3085,6 @@ marked@^11.1.1:
   resolved "https://registry.npmmirror.com/marked/-/marked-11.1.1.tgz"
   integrity sha512-EgxRjgK9axsQuUa/oKMx5DEY8oXpKJfk61rT5iY3aRlgU6QJtUcxU5OAymdhCvWvhYcd9FKmO5eQoX8m9VGJXg==
 
-mdast-util-definitions@^5.0.0:
-  version "5.1.2"
-  dependencies:
-    "@types/mdast" "^3.0.0"
-    "@types/unist" "^2.0.0"
-    unist-util-visit "^4.0.0"
-
 mdast-util-find-and-replace@^2.0.0:
   version "2.2.2"
   dependencies:
@@ -3877,7 +3093,7 @@ mdast-util-find-and-replace@^2.0.0:
     unist-util-is "^5.0.0"
     unist-util-visit-parents "^5.0.0"
 
-mdast-util-from-markdown@^1.0.0, mdast-util-from-markdown@^1.1.0:
+mdast-util-from-markdown@^1.0.0:
   version "1.3.1"
   dependencies:
     "@types/mdast" "^3.0.0"
@@ -3892,13 +3108,6 @@ mdast-util-from-markdown@^1.0.0, mdast-util-from-markdown@^1.1.0:
     micromark-util-types "^1.0.0"
     unist-util-stringify-position "^3.0.0"
     uvu "^0.5.0"
-
-mdast-util-frontmatter@^1.0.0:
-  version "1.0.1"
-  dependencies:
-    "@types/mdast" "^3.0.0"
-    mdast-util-to-markdown "^1.3.0"
-    micromark-extension-frontmatter "^1.0.0"
 
 mdast-util-gfm-autolink-literal@^1.0.0:
   version "1.0.3"
@@ -3953,66 +3162,11 @@ mdast-util-math@^2.0.0:
     longest-streak "^3.0.0"
     mdast-util-to-markdown "^1.3.0"
 
-mdast-util-mdx-expression@^1.0.0:
-  version "1.3.2"
-  dependencies:
-    "@types/estree-jsx" "^1.0.0"
-    "@types/hast" "^2.0.0"
-    "@types/mdast" "^3.0.0"
-    mdast-util-from-markdown "^1.0.0"
-    mdast-util-to-markdown "^1.0.0"
-
-mdast-util-mdx-jsx@^2.0.0:
-  version "2.1.4"
-  dependencies:
-    "@types/estree-jsx" "^1.0.0"
-    "@types/hast" "^2.0.0"
-    "@types/mdast" "^3.0.0"
-    "@types/unist" "^2.0.0"
-    ccount "^2.0.0"
-    mdast-util-from-markdown "^1.1.0"
-    mdast-util-to-markdown "^1.3.0"
-    parse-entities "^4.0.0"
-    stringify-entities "^4.0.0"
-    unist-util-remove-position "^4.0.0"
-    unist-util-stringify-position "^3.0.0"
-    vfile-message "^3.0.0"
-
-mdast-util-mdx@^2.0.0:
-  version "2.0.1"
-  dependencies:
-    mdast-util-from-markdown "^1.0.0"
-    mdast-util-mdx-expression "^1.0.0"
-    mdast-util-mdx-jsx "^2.0.0"
-    mdast-util-mdxjs-esm "^1.0.0"
-    mdast-util-to-markdown "^1.0.0"
-
-mdast-util-mdxjs-esm@^1.0.0:
-  version "1.3.1"
-  dependencies:
-    "@types/estree-jsx" "^1.0.0"
-    "@types/hast" "^2.0.0"
-    "@types/mdast" "^3.0.0"
-    mdast-util-from-markdown "^1.0.0"
-    mdast-util-to-markdown "^1.0.0"
-
 mdast-util-phrasing@^3.0.0:
   version "3.0.1"
   dependencies:
     "@types/mdast" "^3.0.0"
     unist-util-is "^5.0.0"
-
-mdast-util-to-hast@^12.1.0:
-  version "12.3.0"
-  dependencies:
-    "@types/hast" "^2.0.0"
-    "@types/mdast" "^3.0.0"
-    mdast-util-definitions "^5.0.0"
-    micromark-util-sanitize-uri "^1.1.0"
-    trim-lines "^3.0.0"
-    unist-util-generated "^2.0.0"
-    unist-util-position "^4.0.0"
-    unist-util-visit "^4.0.0"
 
 mdast-util-to-markdown@^1.0.0, mdast-util-to-markdown@^1.3.0:
   version "1.5.0"
@@ -4037,32 +3191,11 @@ mdn-data@2.0.28:
 mdn-data@2.0.30:
   version "2.0.30"
 
-mdx-bundler@^9.2.1:
-  version "9.2.1"
-  dependencies:
-    "@babel/runtime" "^7.16.3"
-    "@esbuild-plugins/node-resolve" "^0.1.4"
-    "@fal-works/esbuild-plugin-global-externals" "^2.1.2"
-    "@mdx-js/esbuild" "^2.0.0"
-    gray-matter "^4.0.3"
-    remark-frontmatter "^4.0.1"
-    remark-mdx-frontmatter "^1.1.1"
-    uuid "^8.3.2"
-    vfile "^5.3.2"
-
-memfs@^3.5.1:
-  version "3.5.3"
-  dependencies:
-    fs-monkey "^1.0.4"
-
 merge-stream@^2.0.0:
   version "2.0.0"
 
 merge2@^1.3.0, merge2@^1.4.1:
   version "1.4.1"
-
-methods@^1.1.1:
-  version "1.1.2"
 
 micromark-core-commonmark@^1.0.0, micromark-core-commonmark@^1.0.1:
   version "1.1.0"
@@ -4083,14 +3216,6 @@ micromark-core-commonmark@^1.0.0, micromark-core-commonmark@^1.0.1:
     micromark-util-symbol "^1.0.0"
     micromark-util-types "^1.0.1"
     uvu "^0.5.0"
-
-micromark-extension-frontmatter@^1.0.0:
-  version "1.1.1"
-  dependencies:
-    fault "^2.0.0"
-    micromark-util-character "^1.0.0"
-    micromark-util-symbol "^1.0.0"
-    micromark-util-types "^1.0.0"
 
 micromark-extension-gfm-autolink-literal@^1.0.0:
   version "1.0.5"
@@ -4168,62 +3293,6 @@ micromark-extension-math@^2.0.0:
     micromark-util-types "^1.0.0"
     uvu "^0.5.0"
 
-micromark-extension-mdx-expression@^1.0.0:
-  version "1.0.8"
-  dependencies:
-    "@types/estree" "^1.0.0"
-    micromark-factory-mdx-expression "^1.0.0"
-    micromark-factory-space "^1.0.0"
-    micromark-util-character "^1.0.0"
-    micromark-util-events-to-acorn "^1.0.0"
-    micromark-util-symbol "^1.0.0"
-    micromark-util-types "^1.0.0"
-    uvu "^0.5.0"
-
-micromark-extension-mdx-jsx@^1.0.0:
-  version "1.0.5"
-  dependencies:
-    "@types/acorn" "^4.0.0"
-    "@types/estree" "^1.0.0"
-    estree-util-is-identifier-name "^2.0.0"
-    micromark-factory-mdx-expression "^1.0.0"
-    micromark-factory-space "^1.0.0"
-    micromark-util-character "^1.0.0"
-    micromark-util-symbol "^1.0.0"
-    micromark-util-types "^1.0.0"
-    uvu "^0.5.0"
-    vfile-message "^3.0.0"
-
-micromark-extension-mdx-md@^1.0.0:
-  version "1.0.1"
-  dependencies:
-    micromark-util-types "^1.0.0"
-
-micromark-extension-mdxjs-esm@^1.0.0:
-  version "1.0.5"
-  dependencies:
-    "@types/estree" "^1.0.0"
-    micromark-core-commonmark "^1.0.0"
-    micromark-util-character "^1.0.0"
-    micromark-util-events-to-acorn "^1.0.0"
-    micromark-util-symbol "^1.0.0"
-    micromark-util-types "^1.0.0"
-    unist-util-position-from-estree "^1.1.0"
-    uvu "^0.5.0"
-    vfile-message "^3.0.0"
-
-micromark-extension-mdxjs@^1.0.0:
-  version "1.0.1"
-  dependencies:
-    acorn "^8.0.0"
-    acorn-jsx "^5.0.0"
-    micromark-extension-mdx-expression "^1.0.0"
-    micromark-extension-mdx-jsx "^1.0.0"
-    micromark-extension-mdx-md "^1.0.0"
-    micromark-extension-mdxjs-esm "^1.0.0"
-    micromark-util-combine-extensions "^1.0.0"
-    micromark-util-types "^1.0.0"
-
 micromark-factory-destination@^1.0.0:
   version "1.1.0"
   dependencies:
@@ -4238,18 +3307,6 @@ micromark-factory-label@^1.0.0:
     micromark-util-symbol "^1.0.0"
     micromark-util-types "^1.0.0"
     uvu "^0.5.0"
-
-micromark-factory-mdx-expression@^1.0.0:
-  version "1.0.9"
-  dependencies:
-    "@types/estree" "^1.0.0"
-    micromark-util-character "^1.0.0"
-    micromark-util-events-to-acorn "^1.0.0"
-    micromark-util-symbol "^1.0.0"
-    micromark-util-types "^1.0.0"
-    unist-util-position-from-estree "^1.0.0"
-    uvu "^0.5.0"
-    vfile-message "^3.0.0"
 
 micromark-factory-space@^1.0.0:
   version "1.1.0"
@@ -4313,18 +3370,6 @@ micromark-util-decode-string@^1.0.0:
 micromark-util-encode@^1.0.0:
   version "1.1.0"
 
-micromark-util-events-to-acorn@^1.0.0:
-  version "1.2.3"
-  dependencies:
-    "@types/acorn" "^4.0.0"
-    "@types/estree" "^1.0.0"
-    "@types/unist" "^2.0.0"
-    estree-util-visit "^1.0.0"
-    micromark-util-symbol "^1.0.0"
-    micromark-util-types "^1.0.0"
-    uvu "^0.5.0"
-    vfile-message "^3.0.0"
-
 micromark-util-html-tag-name@^1.0.0:
   version "1.2.0"
 
@@ -4338,7 +3383,7 @@ micromark-util-resolve-all@^1.0.0:
   dependencies:
     micromark-util-types "^1.0.0"
 
-micromark-util-sanitize-uri@^1.0.0, micromark-util-sanitize-uri@^1.1.0:
+micromark-util-sanitize-uri@^1.0.0:
   version "1.2.0"
   dependencies:
     micromark-util-character "^1.0.0"
@@ -4394,9 +3439,6 @@ mime-types@^2.1.12:
   dependencies:
     mime-db "1.52.0"
 
-mime@^1.4.1:
-  version "1.6.0"
-
 mimic-fn@^2.1.0:
   version "2.1.0"
 
@@ -4406,16 +3448,13 @@ mimic-fn@^4.0.0:
 mini-svg-data-uri@^1.2.3:
   version "1.4.4"
 
-minimatch@^3.0.3, minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
+minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
   dependencies:
     brace-expansion "^1.1.7"
 
 minimist@^1.2.0, minimist@^1.2.6:
   version "1.2.8"
-
-mkdirp@^1.0.4:
-  version "1.0.4"
 
 moment@^2.30.1:
   version "2.30.1"
@@ -4431,11 +3470,11 @@ mri@^1.1.0:
 mrmime@^1.0.0:
   version "1.0.1"
 
-ms@^2.1.1, ms@2.1.2:
-  version "2.1.2"
+ms@^2.1.1:
+  version "2.1.3"
 
-ms@2.0.0:
-  version "2.0.0"
+ms@2.1.2:
+  version "2.1.2"
 
 mz@^2.7.0:
   version "2.7.0"
@@ -4450,18 +3489,20 @@ nanoid@^3.3.6:
 natural-compare@^1.4.0:
   version "1.4.0"
 
-needle@^2.5.2:
-  version "2.9.1"
+next-auth@^4.24.5:
+  version "4.24.5"
+  resolved "https://registry.npmmirror.com/next-auth/-/next-auth-4.24.5.tgz"
+  integrity sha512-3RafV3XbfIKk6rF6GlLE4/KxjTcuMCifqrmD+98ejFq73SRoj2rmzoca8u764977lH/Q7jo6Xu6yM+Re1Mz/Og==
   dependencies:
-    debug "^3.2.6"
-    iconv-lite "^0.4.4"
-    sax "^1.2.4"
-
-next-contentlayer@^0.3.4, next-contentlayer@0.3.4:
-  version "0.3.4"
-  dependencies:
-    "@contentlayer/core" "0.3.4"
-    "@contentlayer/utils" "0.3.4"
+    "@babel/runtime" "^7.20.13"
+    "@panva/hkdf" "^1.0.2"
+    cookie "^0.5.0"
+    jose "^4.11.4"
+    oauth "^0.9.15"
+    openid-client "^5.4.0"
+    preact "^10.6.3"
+    preact-render-to-string "^5.1.19"
+    uuid "^8.3.2"
 
 next-themes@^0.2.1:
   version "0.2.1"
@@ -4495,20 +3536,10 @@ no-case@^3.0.4:
     lower-case "^2.0.2"
     tslib "^2.0.3"
 
-node-domexception@^1.0.0:
-  version "1.0.0"
-
 node-fetch@^2.6.1, node-fetch@^2.6.12:
   version "2.7.0"
   dependencies:
     whatwg-url "^5.0.0"
-
-node-fetch@^3.0.0:
-  version "3.3.2"
-  dependencies:
-    data-uri-to-buffer "^4.0.0"
-    fetch-blob "^3.1.4"
-    formdata-polyfill "^4.0.10"
 
 node-fetch@~2.6.1:
   version "2.6.13"
@@ -4517,12 +3548,6 @@ node-fetch@~2.6.1:
 
 node-releases@^2.0.13:
   version "2.0.13"
-
-noms@0.0.0:
-  version "0.0.0"
-  dependencies:
-    inherits "^2.0.1"
-    readable-stream "~1.0.31"
 
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
@@ -4548,8 +3573,18 @@ nth-check@^2.0.0, nth-check@^2.0.1:
   dependencies:
     boolbase "^1.0.0"
 
+oauth@^0.9.15:
+  version "0.9.15"
+  resolved "https://registry.npmmirror.com/oauth/-/oauth-0.9.15.tgz"
+  integrity sha512-a5ERWK1kh38ExDEfoO6qUHJb32rd7aYmPHuyCu3Fta/cnICvYmgd2uhuKXvPD+PXB+gCEYYEaQdIRAjCOwAKNA==
+
 object-assign@^4.0.1, object-assign@^4.1.1:
   version "4.1.1"
+
+object-hash@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.npmmirror.com/object-hash/-/object-hash-2.2.0.tgz"
+  integrity sha512-gScRMn0bS5fH+IuwyIFgnh9zBdo4DV+6GhygmWM9HyNJSgS0hScp1f5vjtm7oIIOiT9trXrShAkLFSc2IqKNgw==
 
 object-hash@^3.0.0:
   version "3.0.0"
@@ -4603,6 +3638,11 @@ object.values@^1.1.6, object.values@^1.1.7:
     define-properties "^1.2.0"
     es-abstract "^1.22.1"
 
+oidc-token-hash@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.npmmirror.com/oidc-token-hash/-/oidc-token-hash-5.0.3.tgz"
+  integrity sha512-IF4PcGgzAr6XXSff26Sk/+P4KZFJVuHAJZj3wgO3vX2bMdNVp/QXTP3P7CEm9V1IdG8lDLY3HhiqpsE/nOwpPw==
+
 once@^1.3.0:
   version "1.4.0"
   dependencies:
@@ -4618,9 +3658,6 @@ onetime@^6.0.0:
   dependencies:
     mimic-fn "^4.0.0"
 
-oo-ascii-tree@^1.84.0:
-  version "1.92.0"
-
 open@^9.1.0:
   version "9.1.0"
   dependencies:
@@ -4631,6 +3668,16 @@ open@^9.1.0:
 
 opener@^1.5.2:
   version "1.5.2"
+
+openid-client@^5.4.0:
+  version "5.6.4"
+  resolved "https://registry.npmmirror.com/openid-client/-/openid-client-5.6.4.tgz"
+  integrity sha512-T1h3B10BRPKfcObdBklX639tVz+xh34O7GjofqrqiAQdm7eHsQ00ih18x6wuJ/E6FxdtS2u3FmUGPDeEcMwzNA==
+  dependencies:
+    jose "^4.15.4"
+    lru-cache "^6.0.0"
+    object-hash "^2.2.0"
+    oidc-token-hash "^5.0.3"
 
 optionator@^0.9.3:
   version "0.9.3"
@@ -4688,12 +3735,6 @@ parse5@^7.0.0:
   dependencies:
     entities "^4.4.0"
 
-pascal-case@^3.1.2:
-  version "3.1.2"
-  dependencies:
-    no-case "^3.0.4"
-    tslib "^2.0.3"
-
 path-exists@^4.0.0:
   version "4.0.0"
 
@@ -4712,13 +3753,6 @@ path-parse@^1.0.7:
 path-type@^4.0.0:
   version "4.0.0"
 
-periscopic@^3.0.0:
-  version "3.1.0"
-  dependencies:
-    "@types/estree" "^1.0.0"
-    estree-walker "^3.0.0"
-    is-reference "^3.0.0"
-
 picocolors@^1.0.0:
   version "1.0.0"
 
@@ -4733,23 +3767,6 @@ pify@^2.3.0:
 
 pirates@^4.0.1:
   version "4.0.6"
-
-pliny@0.1.6:
-  version "0.1.6"
-  dependencies:
-    "@docsearch/react" "^3.5.0"
-    "@giscus/react" "^2.3.0"
-    "@mailchimp/mailchimp_marketing" "^3.0.80"
-    contentlayer "^0.3.4"
-    copyfiles "^2.4.1"
-    github-slugger "^1.4.0"
-    js-yaml "4.1.0"
-    kbar "0.1.0-beta.44"
-    next-contentlayer "^0.3.4"
-    next-themes "^0.2.1"
-    probe-image-size "^7.2.3"
-    remark "^14.0.2"
-    unist-util-visit "^4.1.0"
 
 postcss-import@^15.1.0:
   version "15.1.0"
@@ -4796,6 +3813,18 @@ postcss@^8.4.23, postcss@^8.4.24, postcss@8.4.31:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
+preact-render-to-string@^5.1.19:
+  version "5.2.6"
+  resolved "https://registry.npmmirror.com/preact-render-to-string/-/preact-render-to-string-5.2.6.tgz"
+  integrity sha512-JyhErpYOvBV1hEPwIxc/fHWXPfnEGdRKxc8gFdAZ7XV4tlzyzG847XAyEZqoDnynP88akM4eaHcSOzNcLWFguw==
+  dependencies:
+    pretty-format "^3.8.0"
+
+preact@^10.6.3:
+  version "10.19.3"
+  resolved "https://registry.npmmirror.com/preact/-/preact-10.19.3.tgz"
+  integrity sha512-nHHTeFVBTHRGxJXKkKu5hT8C/YWBkPso4/Gad6xuj5dbptt9iF9NZr9pHbPhBrnT2klheu7mHTxTZ/LjwJiEiQ==
+
 prelude-ls@^1.2.1:
   version "1.2.1"
 
@@ -4810,15 +3839,10 @@ prettier-plugin-tailwindcss@^0.4.1:
 prettier@^3.0.0:
   version "3.1.0"
 
-probe-image-size@^7.2.3:
-  version "7.2.3"
-  dependencies:
-    lodash.merge "^4.6.2"
-    needle "^2.5.2"
-    stream-parser "~0.3.1"
-
-process-nextick-args@~2.0.0:
-  version "2.0.1"
+pretty-format@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.npmmirror.com/pretty-format/-/pretty-format-3.8.0.tgz"
+  integrity sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==
 
 prop-types@^15.8.1:
   version "15.8.1"
@@ -4830,22 +3854,6 @@ prop-types@^15.8.1:
 property-information@^6.0.0:
   version "6.4.0"
 
-protobufjs@^7.2.2, protobufjs@^7.2.4:
-  version "7.2.5"
-  dependencies:
-    "@protobufjs/aspromise" "^1.1.2"
-    "@protobufjs/base64" "^1.1.2"
-    "@protobufjs/codegen" "^2.0.4"
-    "@protobufjs/eventemitter" "^1.1.0"
-    "@protobufjs/fetch" "^1.1.0"
-    "@protobufjs/float" "^1.0.2"
-    "@protobufjs/inquire" "^1.1.0"
-    "@protobufjs/path" "^1.1.2"
-    "@protobufjs/pool" "^1.1.0"
-    "@protobufjs/utf8" "^1.1.0"
-    "@types/node" ">=13.7.0"
-    long "^5.0.0"
-
 proxy-from-env@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmmirror.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz"
@@ -4854,8 +3862,10 @@ proxy-from-env@^1.1.0:
 punycode@^2.1.0:
   version "2.3.1"
 
-qs@^6.5.1:
+qs@^6.11.2:
   version "6.11.2"
+  resolved "https://registry.npmmirror.com/qs/-/qs-6.11.2.tgz"
+  integrity sha512-tDNIz22aBzCDxLtVH++VnTfzxlfeK5CbqohpSqpJgj1Wg/cQbStNAz3NuqCs5vV+pjBsK4x4pN9HlVh7rcYRiA==
   dependencies:
     side-channel "^1.0.4"
 
@@ -4876,11 +3886,6 @@ react-dom@18.2.0:
 react-is@^16.13.1:
   version "16.13.1"
 
-react-virtual@^2.8.2:
-  version "2.10.4"
-  dependencies:
-    "@reach/observe-rect" "^1.1.0"
-
 react@18.2.0:
   version "18.2.0"
   dependencies:
@@ -4890,25 +3895,6 @@ read-cache@^1.0.0:
   version "1.0.0"
   dependencies:
     pify "^2.3.0"
-
-readable-stream@^2.0.5, readable-stream@~2.3.6:
-  version "2.3.8"
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.3"
-    isarray "~1.0.0"
-    process-nextick-args "~2.0.0"
-    safe-buffer "~5.1.1"
-    string_decoder "~1.1.1"
-    util-deprecate "~1.0.1"
-
-readable-stream@~1.0.31:
-  version "1.0.34"
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "0.0.1"
-    string_decoder "~0.10.x"
 
 readdirp@~3.6.0:
   version "3.6.0"
@@ -5284,21 +4270,6 @@ rehype-sort-attributes@^4.0.0:
     unified "^10.0.0"
     unist-util-visit "^4.0.0"
 
-rehype-stringify@^9.0.3:
-  version "9.0.4"
-  dependencies:
-    "@types/hast" "^2.0.0"
-    hast-util-to-html "^8.0.0"
-    unified "^10.0.0"
-
-remark-frontmatter@^4.0.1:
-  version "4.0.1"
-  dependencies:
-    "@types/mdast" "^3.0.0"
-    mdast-util-frontmatter "^1.0.0"
-    micromark-extension-frontmatter "^1.0.0"
-    unified "^10.0.0"
-
 remark-gfm@^3.0.1:
   version "3.0.1"
   dependencies:
@@ -5315,33 +4286,11 @@ remark-math@^5.1.1:
     micromark-extension-math "^2.0.0"
     unified "^10.0.0"
 
-remark-mdx-frontmatter@^1.1.1:
-  version "1.1.1"
-  dependencies:
-    estree-util-is-identifier-name "^1.0.0"
-    estree-util-value-to-estree "^1.0.0"
-    js-yaml "^4.0.0"
-    toml "^3.0.0"
-
-remark-mdx@^2.0.0:
-  version "2.3.0"
-  dependencies:
-    mdast-util-mdx "^2.0.0"
-    micromark-extension-mdxjs "^1.0.0"
-
-remark-parse@^10.0.0, remark-parse@^10.0.2:
+remark-parse@^10.0.0:
   version "10.0.2"
   dependencies:
     "@types/mdast" "^3.0.0"
     mdast-util-from-markdown "^1.0.0"
-    unified "^10.0.0"
-
-remark-rehype@^10.0.0, remark-rehype@^10.1.0:
-  version "10.1.0"
-  dependencies:
-    "@types/hast" "^2.0.0"
-    "@types/mdast" "^3.0.0"
-    mdast-util-to-hast "^12.1.0"
     unified "^10.0.0"
 
 remark-stringify@^10.0.0:
@@ -5359,19 +4308,13 @@ remark@^14.0.2:
     remark-stringify "^10.0.0"
     unified "^10.0.0"
 
-repeat-string@^1.6.1:
-  version "1.6.1"
-
-require-directory@^2.1.1:
-  version "2.1.1"
-
 resolve-from@^4.0.0:
   version "4.0.0"
 
 resolve-pkg-maps@^1.0.0:
   version "1.0.0"
 
-resolve@^1.1.7, resolve@^1.14.2, resolve@^1.19.0, resolve@^1.22.2, resolve@^1.22.4:
+resolve@^1.1.7, resolve@^1.14.2, resolve@^1.22.2, resolve@^1.22.4:
   version "1.22.8"
   dependencies:
     is-core-module "^2.13.0"
@@ -5425,21 +4368,12 @@ safe-array-concat@^1.0.1:
     has-symbols "^1.0.3"
     isarray "^2.0.5"
 
-safe-buffer@~5.1.0, safe-buffer@~5.1.1:
-  version "5.1.2"
-
 safe-regex-test@^1.0.0:
   version "1.0.0"
   dependencies:
     call-bind "^1.0.2"
     get-intrinsic "^1.1.3"
     is-regex "^1.1.4"
-
-"safer-buffer@>= 2.1.2 < 3":
-  version "2.1.2"
-
-sax@^1.2.4:
-  version "1.3.0"
 
 scheduler@^0.23.0:
   version "0.23.0"
@@ -5454,11 +4388,6 @@ section-matter@^1.0.0:
 
 semver@^6.3.1:
   version "6.3.1"
-
-semver@^7.3.5:
-  version "7.5.4"
-  dependencies:
-    lru-cache "^6.0.0"
 
 semver@^7.5.4:
   version "7.5.4"
@@ -5523,17 +4452,8 @@ snake-case@^3.0.4:
 source-map-js@^1.0.1, source-map-js@^1.0.2:
   version "1.0.2"
 
-source-map-support@^0.5.21:
-  version "0.5.21"
-  dependencies:
-    buffer-from "^1.0.0"
-    source-map "^0.6.0"
-
-source-map@^0.6.0, source-map@~0.6.0:
+source-map@~0.6.0:
   version "0.6.1"
-
-source-map@^0.7.0:
-  version "0.7.4"
 
 space-separated-tokens@^2.0.0:
   version "2.0.2"
@@ -5541,33 +4461,11 @@ space-separated-tokens@^2.0.0:
 sprintf-js@~1.0.2:
   version "1.0.3"
 
-stream-parser@~0.3.1:
-  version "0.3.1"
-  dependencies:
-    debug "2"
-
 streamsearch@^1.1.0:
   version "1.1.0"
 
-string_decoder@~0.10.x:
-  version "0.10.31"
-  resolved "https://registry.npmmirror.com/string_decoder/-/string_decoder-0.10.31.tgz"
-  integrity sha512-ev2QzSzWPYmy9GuqfIVildA4OdcGLeFZQrq5ys6RtiuF+RQQiZWr8TZNyAcuVXyQRYfEO+MsoB/1BuQVhOJuoQ==
-
-string_decoder@~1.1.1:
-  version "1.1.1"
-  dependencies:
-    safe-buffer "~5.1.0"
-
 string-argv@0.3.2:
   version "0.3.2"
-
-string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
-  version "4.2.3"
-  dependencies:
-    emoji-regex "^8.0.0"
-    is-fullwidth-code-point "^3.0.0"
-    strip-ansi "^6.0.1"
 
 string-width@^5.0.0:
   version "5.1.2"
@@ -5617,13 +4515,7 @@ string.prototype.trimstart@^1.0.7:
     define-properties "^1.2.0"
     es-abstract "^1.22.1"
 
-stringify-entities@^4.0.0:
-  version "4.0.3"
-  dependencies:
-    character-entities-html4 "^2.0.0"
-    character-entities-legacy "^3.0.0"
-
-strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+strip-ansi@^6.0.1:
   version "6.0.1"
   dependencies:
     ansi-regex "^5.0.1"
@@ -5648,11 +4540,6 @@ strip-final-newline@^3.0.0:
 strip-json-comments@^3.1.1:
   version "3.1.1"
 
-style-to-object@^0.4.1:
-  version "0.4.4"
-  dependencies:
-    inline-style-parser "0.1.1"
-
 styled-jsx@5.1.1:
   version "5.1.1"
   dependencies:
@@ -5668,20 +4555,6 @@ sucrase@^3.32.0:
     mz "^2.7.0"
     pirates "^4.0.1"
     ts-interface-checker "^0.1.9"
-
-superagent@3.8.1:
-  version "3.8.1"
-  dependencies:
-    component-emitter "^1.2.0"
-    cookiejar "^2.1.0"
-    debug "^3.1.0"
-    extend "^3.0.0"
-    form-data "^2.3.1"
-    formidable "^1.1.1"
-    methods "^1.1.1"
-    mime "^1.4.1"
-    qs "^6.5.1"
-    readable-stream "^2.0.5"
 
 supports-color@^5.3.0:
   version "5.5.0"
@@ -5764,15 +4637,6 @@ thenify-all@^1.0.0:
   dependencies:
     any-promise "^1.0.0"
 
-through2@^2.0.1:
-  version "2.0.5"
-  dependencies:
-    readable-stream "~2.3.6"
-    xtend "~4.0.1"
-
-tiny-invariant@^1.2.0:
-  version "1.3.1"
-
 titleize@^3.0.0:
   version "3.0.0"
 
@@ -5784,17 +4648,11 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-toml@^3.0.0:
-  version "3.0.0"
-
 totalist@^1.0.0:
   version "1.1.0"
 
 tr46@~0.0.3:
   version "0.0.3"
-
-trim-lines@^3.0.0:
-  version "3.0.1"
 
 trough@^2.0.0:
   version "2.1.0"
@@ -5805,9 +4663,6 @@ ts-api-utils@^1.0.1:
 ts-interface-checker@^0.1.9:
   version "0.1.13"
 
-ts-pattern@^4.3.0:
-  version "4.3.0"
-
 tsconfig-paths@^3.14.2:
   version "3.14.2"
   dependencies:
@@ -5816,16 +4671,13 @@ tsconfig-paths@^3.14.2:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
-tslib@^2.0.3, tslib@^2.3.1, tslib@^2.4.0, tslib@^2.4.1, tslib@^2.5.0, tslib@^2.6.0:
+tslib@^2.0.3, tslib@^2.3.1, tslib@^2.4.0, tslib@^2.5.0, tslib@^2.6.0:
   version "2.6.2"
 
 tslib@2.4.0:
   version "2.4.0"
   resolved "https://registry.npmmirror.com/tslib/-/tslib-2.4.0.tgz"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
-
-typanion@^3.12.1, typanion@^3.8.0:
-  version "3.14.0"
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
@@ -5839,9 +4691,6 @@ type-fest@^0.20.2:
 
 type-fest@^1.0.2:
   version "1.4.0"
-
-type-fest@^3.12.0:
-  version "3.13.1"
 
 typed-array-buffer@^1.0.0:
   version "1.0.0"
@@ -5890,6 +4739,8 @@ unbox-primitive@^1.0.2:
 
 undici-types@~5.26.4:
   version "5.26.5"
+  resolved "https://registry.npmmirror.com/undici-types/-/undici-types-5.26.5.tgz"
+  integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
 unicode-canonical-property-names-ecmascript@^2.0.0:
   version "2.0.0"
@@ -5906,7 +4757,7 @@ unicode-match-property-value-ecmascript@^2.1.0:
 unicode-property-aliases-ecmascript@^2.0.0:
   version "2.1.0"
 
-unified@^10.0.0, unified@^10.1.0, unified@^10.1.2:
+unified@^10.0.0, unified@^10.1.0:
   version "10.1.2"
   dependencies:
     "@types/unist" "^2.0.0"
@@ -5930,21 +4781,8 @@ unist-util-find-after@^4.0.0:
     "@types/unist" "^2.0.0"
     unist-util-is "^5.0.0"
 
-unist-util-generated@^2.0.0:
-  version "2.0.1"
-
 unist-util-is@^5.0.0:
   version "5.2.1"
-  dependencies:
-    "@types/unist" "^2.0.0"
-
-unist-util-position-from-estree@^1.0.0, unist-util-position-from-estree@^1.1.0:
-  version "1.1.2"
-  dependencies:
-    "@types/unist" "^2.0.0"
-
-unist-util-position@^4.0.0:
-  version "4.0.4"
   dependencies:
     "@types/unist" "^2.0.0"
 
@@ -5986,11 +4824,13 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-util-deprecate@^1.0.2, util-deprecate@~1.0.1:
+util-deprecate@^1.0.2:
   version "1.0.2"
 
 uuid@^8.3.2:
   version "8.3.2"
+  resolved "https://registry.npmmirror.com/uuid/-/uuid-8.3.2.tgz"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 uvu@^0.5.0:
   version "0.5.6"
@@ -6012,7 +4852,7 @@ vfile-message@^3.0.0:
     "@types/unist" "^2.0.0"
     unist-util-stringify-position "^3.0.0"
 
-vfile@^5.0.0, vfile@^5.3.2:
+vfile@^5.0.0:
   version "5.3.7"
   dependencies:
     "@types/unist" "^2.0.0"
@@ -6028,9 +4868,6 @@ watchpack@2.4.0:
 
 web-namespaces@^2.0.0:
   version "2.0.1"
-
-web-streams-polyfill@^3.0.3:
-  version "3.2.1"
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
@@ -6101,13 +4938,6 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-wrap-ansi@^7.0.0:
-  version "7.0.0"
-  dependencies:
-    ansi-styles "^4.0.0"
-    string-width "^4.1.0"
-    strip-ansi "^6.0.0"
-
 wrap-ansi@^8.0.1:
   version "8.1.0"
   dependencies:
@@ -6128,19 +4958,15 @@ wrappy@1:
 ws@^7.3.1:
   version "7.5.9"
 
-xtend@~4.0.1:
-  version "4.0.2"
-
-y18n@^5.0.5:
-  version "5.0.8"
-
 yallist@^3.0.2:
   version "3.1.1"
 
 yallist@^4.0.0:
   version "4.0.0"
+  resolved "https://registry.npmmirror.com/yallist/-/yallist-4.0.0.tgz"
+  integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 
-yaml@^2.3.1, yaml@^2.3.4:
+yaml@^2.3.4:
   version "2.3.4"
 
 yaml@2.3.1:
@@ -6148,43 +4974,8 @@ yaml@2.3.1:
   resolved "https://registry.npmmirror.com/yaml/-/yaml-2.3.1.tgz"
   integrity sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==
 
-yargs-parser@^20.2.2:
-  version "20.2.9"
-  resolved "https://registry.npmmirror.com/yargs-parser/-/yargs-parser-20.2.9.tgz"
-  integrity sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==
-
-yargs-parser@^21.1.1:
-  version "21.1.1"
-
-yargs@^16.1.0:
-  version "16.2.0"
-  resolved "https://registry.npmmirror.com/yargs/-/yargs-16.2.0.tgz"
-  integrity sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
-  dependencies:
-    cliui "^7.0.2"
-    escalade "^3.1.1"
-    get-caller-file "^2.0.5"
-    require-directory "^2.1.1"
-    string-width "^4.2.0"
-    y18n "^5.0.5"
-    yargs-parser "^20.2.2"
-
-yargs@^17.7.2:
-  version "17.7.2"
-  dependencies:
-    cliui "^8.0.1"
-    escalade "^3.1.1"
-    get-caller-file "^2.0.5"
-    require-directory "^2.1.1"
-    string-width "^4.2.3"
-    y18n "^5.0.5"
-    yargs-parser "^21.1.1"
-
 yocto-queue@^0.1.0:
   version "0.1.0"
 
-zod@^3.21.4:
-  version "3.22.4"
-
-zwitch@^2.0.0, zwitch@^2.0.4:
+zwitch@^2.0.0:
   version "2.0.4"

@@ -6,6 +6,7 @@ import MdToHtml from '@/components/Markdown/MdToHtml'
 import { PREFIX } from '@/data/constant'
 import Image from 'next/image'
 import moment from 'moment'
+import Comment from '@/components/GiscusComment'
 
 const defaultAuthor = siteMetadata.author
 
@@ -100,5 +101,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
     <hr className='my-4' />
     {/* 内容 */}
     <MdToHtml content={post.attributes.content} />
+    {/* 评论 */}
+    <Comment />
   </div>
 }

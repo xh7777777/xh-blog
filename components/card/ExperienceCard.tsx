@@ -11,7 +11,7 @@ function ExperienceCard({
 }) {
   return (
     <div className={className}>
-      <div className="flex gap-4">
+      <div className="flex gap-4 pl-4">
         <div className="flex flex-col items-center justify-center">
           <Image
             src={experience.iconUrl}

@@ -19,9 +19,7 @@ function DescriptionCard({ content, isShow }: { content: string; isShow: boolean
 function SkillList() {
   const [currentActive, setCurrentActive] = useState('')
   function onMouseOver(e) {
-    setTimeout(() => {
         setCurrentActive(e.target.dataset.name)
-    }, 200)
   }
   return (
     <div>

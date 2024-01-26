@@ -7,7 +7,7 @@ function Experience() {
     // timeLine
     <div>
         {experience.map((experience: experienceProps) => (
-            <ExperienceCard experience={experience} key={experience.name} className='timeline p-6' />
+            <ExperienceCard experience={experience} key={experience.name} className='timeline py-4' />
         ))}
     </div>
   )
