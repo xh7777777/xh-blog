@@ -22,6 +22,28 @@
   @apply my-5;
 }
 
+.icon-bg {
+  @apply rounded-md bg-gray-100 dark:bg-gray-700 transition-all duration-300
+}
+
+.neon-text {
+  font-size: 3rem;
+  color: #fff;
+  position: relative;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.neon-text:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+               0 0 40px rgba(255, 255, 255, 1),
+               0 0 80px rgba(255, 255, 255, 1);
+}
+
+.ttt {
+  @apply text-gray-500 dark:text-gray-400 duration-200 transition-colors;
+}
+
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
@@ -32,4 +54,130 @@ input:-webkit-autofill:focus {
 
 .katex-display {
   overflow: auto hidden;
+}
+
+
+/* code highlight theme */
+
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  transition: all 0.3s ease;
+}
+code.hljs {
+}
+/*!
+  Theme: GitHub Dark
+  Description: Dark theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-dark
+  Current colors taken from GitHub's CSS
+*/
+
+.hljs {
+  @apply text-[#24292e] bg-[#ffffff] dark:text-[#c9d1d9] dark:bg-[#0d1117];
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  @apply text-[#d73a49] dark:text-[#ff7b72];
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  @apply text-[#6f42c1] dark:text-[#d2a8ff];
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  /* prettylights-syntax-constant */
+  @apply text-[#005cc5] dark:text-[#79c0ff];
+}
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  @apply text-[#032f62] dark:text-[#56d364];
+}
+.hljs-built_in,
+.hljs-symbol {
+  /* prettylights-syntax-variable */
+  @apply text-[#e36209] dark:text-[#ffa657];
+}
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  /* prettylights-syntax-comment */
+  @apply text-[#6a737d] dark:text-[#8b949e];
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  @apply text-[#22863a] dark:text-[#56d364];
+}
+.hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  @apply text-[#24292e] dark:text-[#c9d1d9];
+}
+.hljs-section {
+  /* prettylights-syntax-markup-heading */
+  @apply text-[#005cc5] dark:text-[#1f6feb] font-bold;
+}
+.hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  @apply text-[#735c0f] dark:text-[#f2cc60];
+}
+.hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  @apply italic text-[#24292e] dark:text-[#c9d1d9];
+}
+.hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  @apply font-bold text-[#24292e] dark:text-[#c9d1d9];
+}
+.hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  @apply text-[#22863a] dark:text-[#aff5b4] bg-[#f0fff4] dark:bg-[#033a16];
+}
+.hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  @apply text-[#b31d28] dark:text-[#ffdcd7] bg-[#ffeef0] dark:bg-[#67060c];
+}
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  /* purposely ignored */
+  
+}
+
+.timeline {
+  @apply relative border-l-[2px] pl-2;
+}
+
+.timeline::before {
+  @apply absolute top-0 -left-[4.5px] w-2 h-2 rounded-full bg-gray-300 dark:bg-gray-700;
+  content:'';
 }

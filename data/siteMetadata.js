@@ -1,23 +1,22 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
-  language: 'en-us',
+  title: 'xh777的个人小站',
+  author: 'HUAN XIAO',
+  headerTitle: 'xh777的个人小站',
+  description: '分享前端技术、生活感悟、读书笔记、音乐演奏等...',
+  language: 'zh-cn',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://xh777blog.xyz',
+  siteRepo: 'https://github.com/xh7777777/xh-blog',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
+  email: '490327763@qq.com',
+  github: 'https://github.com/xh7777777',
+  bilibili: 'https://space.bilibili.com/15385937',
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
-  locale: 'en-US',
+  locale: 'zh-CN',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
@@ -72,20 +71,20 @@ const siteMetadata = {
       lang: 'en',
     },
   },
-  search: {
-    provider: 'kbar', // kbar or algolia
-    kbarConfig: {
-      searchDocumentsPath: 'search.json', // path to load documents to search
-    },
-    // provider: 'algolia',
-    // algoliaConfig: {
-    //   // The application ID provided by Algolia
-    //   appId: 'R2IYF7ETH7',
-    //   // Public API key: it is safe to commit it
-    //   apiKey: '599cec31baffa4868cae4e79f180729b',
-    //   indexName: 'docsearch',
-    // },
-  },
+  // search: {
+  //   provider: 'kbar', // kbar or algolia
+  //   kbarConfig: {
+  //     searchDocumentsPath: 'search.json', // path to load documents to search
+  //   },
+  //   // provider: 'algolia',
+  //   // algoliaConfig: {
+  //   //   // The application ID provided by Algolia
+  //   //   appId: 'R2IYF7ETH7',
+  //   //   // Public API key: it is safe to commit it
+  //   //   apiKey: '599cec31baffa4868cae4e79f180729b',
+  //   //   indexName: 'docsearch',
+  //   // },
+  // },
 }
 
 module.exports = siteMetadata

@@ -1,30 +1,16 @@
-import ListLayout from '@/layouts/ListLayoutWithTags'
-import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
-import { allBlogs } from 'contentlayer/generated'
 import { genPageMetadata } from 'app/seo'
-
-const POSTS_PER_PAGE = 5
+import { getAllTags, getPostList } from 'api/serverApi'
+import PostListLayout from '@/layouts/PostListLayout'
+import { strapiToPost, strapiToTag } from 'type/dto'
 
 export const metadata = genPageMetadata({ title: 'Blog' })
 
-export default function BlogPage() {
-  const posts = allCoreContent(sortPosts(allBlogs))
-  const pageNumber = 1
-  const initialDisplayPosts = posts.slice(
-    POSTS_PER_PAGE * (pageNumber - 1),
-    POSTS_PER_PAGE * pageNumber
-  )
-  const pagination = {
-    currentPage: pageNumber,
-    totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
-  }
-
+export default async function BlogPage() {
+  let { data:tagData } = await getAllTags()
+  let { data:postData } = await getPostList(0, 5, true)
+  let tags = strapiToTag(tagData)
+  let posts = strapiToPost(postData)
   return (
-    <ListLayout
-      posts={posts}
-      initialDisplayPosts={initialDisplayPosts}
-      pagination={pagination}
-      title="All Posts"
-    />
+    <PostListLayout posts={posts} tags={tags}/>
   )
 }

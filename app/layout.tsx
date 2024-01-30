@@ -1,9 +1,7 @@
 import 'css/tailwind.css'
-import 'pliny/search/algolia.css'
 
+import React from 'react'
 import { Space_Grotesk } from 'next/font/google'
-import { Analytics, AnalyticsConfig } from 'pliny/analytics'
-import { SearchProvider, SearchConfig } from 'pliny/search'
 import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
 import Footer from '@/components/Footer'
@@ -30,7 +28,7 @@ export const metadata: Metadata = {
     url: './',
     siteName: siteMetadata.title,
     images: [siteMetadata.socialBanner],
-    locale: 'en_US',
+    locale: 'zh_CN',
     type: 'website',
   },
   alternates: {
@@ -58,6 +56,7 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+
   return (
     <html
       lang={siteMetadata.language}
@@ -65,26 +64,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/icons8-guitar-pick-32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/icons8-guitar-pick-16.png" />
       <link rel="manifest" href="/static/favicons/site.webmanifest" />
       <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#000000" />
-      <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
+      <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+      <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white transition-all duration-300 overflow-x-hidden">
         <ThemeProviders>
-          <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
-          <SectionContainer>
-            <div className="flex h-screen flex-col justify-between font-sans">
-              <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
-                <Header />
+            <Header />
+            <SectionContainer>
+              <div className="flex min-h-screen flex-col justify-between font-sans">
                 <main className="mb-auto">{children}</main>
-              </SearchProvider>
-              <Footer />
-            </div>
-          </SectionContainer>
+                <Footer />
+              </div>
+            </SectionContainer>
         </ThemeProviders>
       </body>
     </html>

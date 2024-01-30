@@ -1,5 +1,3 @@
-const { withContentlayer } = require('next-contentlayer')
-
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
@@ -58,7 +56,7 @@ const securityHeaders = [
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
 module.exports = () => {
-  const plugins = [withContentlayer, withBundleAnalyzer]
+  const plugins = [withBundleAnalyzer]
   return plugins.reduce((acc, next) => next(acc), {
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
@@ -71,6 +69,35 @@ module.exports = () => {
           protocol: 'https',
           hostname: 'picsum.photos',
         },
+        {
+          protocol: 'http',
+          hostname: 'localhost',
+          port: '3004',
+        },
+        {
+            protocol: 'https',
+            hostname: 'xh777blog.xyz',
+        },
+        {
+            protocol: 'https',
+            hostname: 'myadministration.xh777blog.xyz',
+        },
+        {
+            protocol: 'https',
+            hostname: 'cdn.xh777blog.xyz',
+        },
+        {
+            protocol: 'https',
+            hostname: 'imxh777.cn',
+        },
+        {
+            protocol: 'https',
+            hostname: 'admin.imxh777.cn',
+        },
+        {
+            protocol: 'https',
+            hostname: 'cdn.imxh777.cn',
+        }
       ],
     },
     async headers() {
