@@ -1,5 +1,6 @@
 import { URL } from '@/data/constant'
 import qs from 'qs'
+import { REVALIDATE_TIME } from '@/data/constant'
 
 export async function getAllPostSlug() {
   const query = qs.stringify(
@@ -11,7 +12,7 @@ export async function getAllPostSlug() {
       encode: false,
     }
   )
-  const res = await fetch(URL + `/articles?${query}`, { next: { revalidate: 3600 } }).then((res) =>
+  const res = await fetch(URL + `/articles?${query}`, { next: { revalidate: REVALIDATE_TIME } }).then((res) =>
     res.json()
   )
   return res
@@ -33,7 +34,7 @@ export async function getPostBySlug(slug: string) {
       encode: false,
     }
   )
-  const res = await fetch(URL + `/articles?${query}`, { next: { revalidate: 3600 } }).then((res) =>
+  const res = await fetch(URL + `/articles?${query}`, { next: { revalidate: REVALIDATE_TIME } }).then((res) =>
     res.json()
   )
   return res
@@ -55,7 +56,7 @@ export async function getPostMetaDataBySlug(slug: string) {
       encode: false,
     }
   )
-  const res = await fetch(URL + `/articles?${query}`, { next: { revalidate: 3600 } }).then((res) =>
+  const res = await fetch(URL + `/articles?${query}`, { next: { revalidate: REVALIDATE_TIME } }).then((res) =>
     res.json()
   )
   return res
@@ -88,7 +89,7 @@ export async function getPostList(
     encodeValuesOnly: true,
     encode: false,
   })
-  const res = await fetch(URL + `/articles?${query}`, { next: { revalidate: 3600 } }).then((res) =>
+  const res = await fetch(URL + `/articles?${query}`, { next: { revalidate: REVALIDATE_TIME } }).then((res) =>
     res.json()
   )
   return res
@@ -103,7 +104,7 @@ export async function getAllTags() {
       },
     },
   })
-  const res = await fetch(URL + `/tags?${query}`, { next: { revalidate: 3600 } }).then((res) =>
+  const res = await fetch(URL + `/tags?${query}`, { next: { revalidate: REVALIDATE_TIME } }).then((res) =>
     res.json()
   )
   return res
@@ -114,7 +115,7 @@ export async function getProjects() {
     fields: ['id', 'name', 'description', 'url'],
     populate: ['cover_code'],
 })
-  const res = await fetch(URL + `/projects?${query}`, { next: { revalidate: 3600 } }).then((res) =>
+  const res = await fetch(URL + `/projects?${query}`, { next: { revalidate: REVALIDATE_TIME } }).then((res) =>
     res.json()
   )
   return res
@@ -124,8 +125,19 @@ export async function getAbout() {
   const query = qs.stringify({
     fields: ['name', 'about', 'skills', 'avatar', 'experience', 'resume_url'],
   })
-  const res = await fetch(URL + `/configs?${query}`, { next: { revalidate: 3600 } }).then((res) =>
+  const res = await fetch(URL + `/configs?${query}`, { next: { revalidate: REVALIDATE_TIME } }).then((res) =>
     res.json()
   )
+  return res
+}
+
+export async function postMessage(data: string) {
+  const res = await fetch(URL + `/guestBooks`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  }).then((res) => res.json())
   return res
 }
