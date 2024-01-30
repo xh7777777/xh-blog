@@ -6,7 +6,18 @@ const config = {
   providers: [
     GithubProvider({
       clientId: process.env.OAUTH_CLIENT_ID ?? '',
-      clientSecret: process.env.OAUTH_CLIENT_SECRET ?? ''
+      clientSecret: process.env.OAUTH_CLIENT_SECRET ?? '',
+      profile(profile) {
+        return {
+          id: profile.id+'',
+          name: profile.name,
+          email: profile.email,
+          image: profile.avatar_url,
+        }
+      },
+      httpOptions: {
+        timeout: 10000,
+      }
     }),
   ]
 }
