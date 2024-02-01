@@ -18,11 +18,13 @@ export async function generateMetadata({
   const slug = decodeURI(params.slug.join('/'))
   const { data } = await getPostMetaDataBySlug(slug)
   if (!data || !Array.isArray(data) || data.length === 0) {
-    return;
+    return
   }
   const post = data[0]
   const { title, description, publish_date, updatedAt, cover_code } = post.attributes
-  const imageUrl = cover_code ? PREFIX + cover_code?.data?.attributes?.url : siteMetadata.socialBanner
+  const imageUrl = cover_code
+    ? PREFIX + cover_code?.data?.attributes?.url
+    : siteMetadata.socialBanner
   const author = defaultAuthor
   if (!post) {
     return
@@ -50,7 +52,7 @@ export async function generateMetadata({
       modifiedTime: modifiedAt,
       url: './',
       images: ogImages,
-      authors: author
+      authors: author,
     },
     twitter: {
       card: 'summary_large_image',
@@ -68,7 +70,6 @@ export async function generateStaticParams() {
   }))
 }
 
-
 export default async function Page({ params }: { params: { slug: string[] } }) {
   const slug = decodeURI(params.slug.join('/'))
   const { data } = await getPostBySlug(slug)
@@ -78,30 +79,40 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
   }
   const post = data[0]
   const { title, publish_date, cover_code, read_time } = post.attributes
-  const imageUrl = cover_code ? PREFIX + cover_code?.data?.attributes?.url : siteMetadata.socialBanner
-  return <div className='px-6 md:px-2'>
-    <Image src={imageUrl} alt='好似没有封面' width={1200} height={680} className='rounded-lg overflow-hidden object-contain w-4/5 my-4' />
-    {/* 标题 */}
-    <h1 className='text-3xl font-bold py-4'>{title}</h1>
-    {/* 发布&阅读时间 */}
-    <div className='flex gap-3'>
-      <dl className="text-base font-medium leading-6 ttt">
-        <dd>
-          <time dateTime={publish_date}>发布于 { moment(publish_date).format('YYYY-MM-DD')}</time>
-        </dd>
-      </dl>
-      <div>·</div>
-      <div>
-        <dl className="text-base font-medium leading-6 ttt">
-          <dd>{read_time} 分钟阅读</dd>
+  const imageUrl = cover_code
+    ? PREFIX + cover_code?.data?.attributes?.url
+    : siteMetadata.socialBanner
+  return (
+    <div className="px-6 md:px-2">
+      <Image
+        src={imageUrl}
+        alt="好似没有封面"
+        width={1200}
+        height={680}
+        className="my-4 w-4/5 overflow-hidden rounded-lg object-contain"
+      />
+      {/* 标题 */}
+      <h1 className="py-4 text-3xl font-bold">{title}</h1>
+      {/* 发布&阅读时间 */}
+      <div className="flex gap-3">
+        <dl className="ttt text-base font-medium leading-6">
+          <dd>
+            <time dateTime={publish_date}>发布于 {moment(publish_date).format('YYYY-MM-DD')}</time>
+          </dd>
         </dl>
+        <div>·</div>
+        <div>
+          <dl className="ttt text-base font-medium leading-6">
+            <dd>{read_time} 分钟阅读</dd>
+          </dl>
+        </div>
       </div>
+      {/* 分割线 */}
+      <hr className="my-4" />
+      {/* 内容 */}
+      <MdToHtml content={post.attributes.content} />
+      {/* 评论 */}
+      <Comment />
     </div>
-    {/* 分割线 */}
-    <hr className='my-4' />
-    {/* 内容 */}
-    <MdToHtml content={post.attributes.content} />
-    {/* 评论 */}
-    <Comment />
-  </div>
+  )
 }

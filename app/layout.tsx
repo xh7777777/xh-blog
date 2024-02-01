@@ -56,7 +56,6 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-
   return (
     <html
       lang={siteMetadata.language}
@@ -64,23 +63,33 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/icons8-guitar-pick-32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/icons8-guitar-pick-16.png" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/static/favicons/icons8-guitar-pick-32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/static/favicons/icons8-guitar-pick-16.png"
+      />
       <link rel="manifest" href="/static/favicons/site.webmanifest" />
       <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white transition-all duration-300 overflow-x-hidden">
+      <body className="overflow-x-hidden bg-white text-black antialiased transition-all duration-300 dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
-            <Header />
-            <SectionContainer>
-              <div className="flex min-h-screen flex-col justify-between font-sans">
-                <main className="mb-auto">{children}</main>
-                <Footer />
-              </div>
-            </SectionContainer>
+          <Header />
+          <SectionContainer>
+            <div className="flex min-h-screen flex-col justify-between font-sans">
+              <main className="mb-auto">{children}</main>
+              <Footer />
+            </div>
+          </SectionContainer>
         </ThemeProviders>
       </body>
     </html>

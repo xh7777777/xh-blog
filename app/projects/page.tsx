@@ -6,8 +6,8 @@ import ProjectCard from '@/components/card/ProjectCard'
 export const metadata = genPageMetadata({ title: 'Projects' })
 
 export default async function Projects() {
-  const { data:projectData } = await getProjects();
-  const projects = strapiToProject(projectData);
+  const { data: projectData } = await getProjects()
+  const projects = strapiToProject(projectData)
 
   return (
     <>
@@ -19,18 +19,16 @@ export default async function Projects() {
         </div>
         <div className="container py-12">
           <div className="-m-4 flex flex-wrap">
-            {
-              projects.map((project) => (
-                <ProjectCard
-                  key={project.id}
-                  id={project.id}
-                  name={project.name}
-                  description={project.description}
-                  cover_url={project.cover_url}
-                  url={project.url}
-                />
-              ))
-            }
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                id={project.id}
+                name={project.name}
+                description={project.description}
+                cover_url={project.cover_url}
+                url={project.url}
+              />
+            ))}
           </div>
         </div>
       </div>

@@ -46,7 +46,11 @@ function PostListLayout({ posts, tags }: { posts: IPost[]; tags: ITag[] }) {
       if (searchValue) {
         _filteredPosts = Object.entries(_filteredPosts).reduce(
           (acc, [date, posts]) => {
-            acc[date] = posts.filter((post) => post.title.toLowerCase().includes(searchValue.toLowerCase()) || post.description.toLowerCase().includes(searchValue.toLowerCase()))
+            acc[date] = posts.filter(
+              (post) =>
+                post.title.toLowerCase().includes(searchValue.toLowerCase()) ||
+                post.description.toLowerCase().includes(searchValue.toLowerCase())
+            )
             return acc
           },
           {} as { [key: string]: IPost[] }
@@ -76,7 +80,11 @@ function PostListLayout({ posts, tags }: { posts: IPost[]; tags: ITag[] }) {
       if (newSearchValue) {
         _filteredPosts = Object.entries(_filteredPosts).reduce(
           (acc, [date, posts]) => {
-            acc[date] = posts.filter((post) => post.title.toLowerCase().includes(newSearchValue.toLowerCase()) || post.description.toLowerCase().includes(newSearchValue.toLowerCase()))
+            acc[date] = posts.filter(
+              (post) =>
+                post.title.toLowerCase().includes(newSearchValue.toLowerCase()) ||
+                post.description.toLowerCase().includes(newSearchValue.toLowerCase())
+            )
             return acc
           },
           {} as { [key: string]: IPost[] }

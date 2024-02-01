@@ -56,7 +56,12 @@ export default function AuthorLayout({ content }: Props) {
             <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
               经历
             </h1>
-            <Link className='rounded-lg bg-slate-200 border-2 w-20 h-10 leading-8 text-center' href="...">查看简历</Link>
+            <Link
+              className="h-10 w-20 rounded-lg border-2 bg-slate-200 text-center leading-8"
+              href="..."
+            >
+              查看简历
+            </Link>
           </div>
           <Experience />
         </div>

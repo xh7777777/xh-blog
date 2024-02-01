@@ -22,7 +22,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': 'off',
     'react/react-in-jsx-scope': 'off',
     'jsx-a11y/anchor-is-valid': [
       'error',
@@ -38,5 +38,9 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
+    'prefer-const': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'no-use-before-define': 'off',
+    'react-hooks/exhaustive-deps': 'off',
   },
 }

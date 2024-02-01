@@ -45,7 +45,7 @@ export default async function Home() {
                 read_time={post.read_time}
                 Slug={post.Slug}
                 cover_url={post.cover_url}
-                className='py-4'
+                className="py-4"
               />
             </motion.div>
           ))}
@@ -64,8 +64,7 @@ export default async function Home() {
         </div>
       )}
       {siteMetadata.newsletter?.provider && (
-        <div className="flex items-center justify-center pt-4">
-        </div>
+        <div className="flex items-center justify-center pt-4"></div>
       )}
     </>
   )

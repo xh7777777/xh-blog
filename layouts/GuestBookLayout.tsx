@@ -29,9 +29,9 @@ export default function GuestBookLayout() {
           </h1>
         </div>
 
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col items-center justify-center">
           <div className="ttt p-5">{DESCRIPTION}</div>
-          <div className=" w-full md:w-3/5 mt-8">
+          <div className=" mt-8 w-full md:w-3/5">
             {/* 留言框 */}
             <form
               action="submit"
@@ -41,7 +41,12 @@ export default function GuestBookLayout() {
                 className=" rounded-lg bg-slate-100 dark:bg-slate-900"
                 placeholder="输入留言..."
               ></textarea>
-              <button onClick={handleSignIn} className='bg-slate-100 dark:bg-slate-900 rounded-md py-[1px] hover:bg-slate-200'>提交</button>
+              <button
+                onClick={handleSignIn}
+                className="rounded-md bg-slate-100 py-[1px] hover:bg-slate-200 dark:bg-slate-900"
+              >
+                提交
+              </button>
             </form>
             {/* <button onClick={() => signIn('github')}>登录github
             </button> */}

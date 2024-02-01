@@ -9,7 +9,7 @@ const config = {
       clientSecret: process.env.OAUTH_CLIENT_SECRET ?? '',
       profile(profile) {
         return {
-          id: profile.id+'',
+          id: profile.id + '',
           name: profile.name,
           email: profile.email,
           image: profile.avatar_url,
@@ -17,9 +17,9 @@ const config = {
       },
       httpOptions: {
         timeout: 10000,
-      }
+      },
     }),
-  ]
+  ],
 }
 
 const handler = NextAuth(config)
