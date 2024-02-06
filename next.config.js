@@ -89,15 +89,15 @@ module.exports = () => {
         },
         {
             protocol: 'https',
-            hostname: 'imxh777.cn',
+            hostname: 'imxh777.com',
         },
         {
             protocol: 'https',
-            hostname: 'admin.imxh777.cn',
+            hostname: 'background.imxh777.com',
         },
         {
             protocol: 'https',
-            hostname: 'cdn.imxh777.cn',
+            hostname: 'cdn.imxh777.com',
         }
       ],
     },

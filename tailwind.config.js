@@ -34,11 +34,12 @@ module.exports = {
         sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.pink,
+        primary: colors.blue,
         gray: colors.gray,
+        slate: colors.slate
       },
       backgroundColor: {
-        'transparent-yellow': 'rgba(255, 255, 0, 0.2)',
+        'transparent-blue': 'rgba(148, 137, 231, 0.2)',
       },
       typography: ({ theme }) => ({
         DEFAULT: {
@@ -58,7 +59,7 @@ module.exports = {
               fontWeight: '600',
             },
             pre: {
-              backgroundColor: theme('colors.gray.100'),
+              backgroundColor: theme('colors.slate.100'),
               borderRadius: theme('borderRadius.lg'),
               padding: theme('padding.2'),
             },
@@ -80,10 +81,10 @@ module.exports = {
               code: { color: theme('colors.primary.400') },
             },
             'h1,h2,h3,h4,h5,h6': {
-              color: theme('colors.gray.100'),
+              color: theme('colors.slate.100'),
             },
             pre: {
-              backgroundColor: theme('colors.gray.800'),
+              backgroundColor: theme('colors.slate.800'),
               borderRadius: theme('borderRadius.lg'),
               padding: theme('padding.2'),
             },

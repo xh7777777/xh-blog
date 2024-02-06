@@ -14,7 +14,7 @@ export default async function Home() {
   const posts = strapiToPost(postData)
 
   return (
-    <>
+    <div>
       <Welcome />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         {/* 博客列表 */}
@@ -30,7 +30,7 @@ export default async function Home() {
             className="space-y-2 pb-8 pt-6 md:space-y-5"
             variants={fadeIn('up', 'spring', 0.2, 1)}
           >
-            <h1 className="ttt text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            <h1 className="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               最新文章
             </h1>
           </motion.div>
@@ -66,6 +66,6 @@ export default async function Home() {
       {siteMetadata.newsletter?.provider && (
         <div className="flex items-center justify-center pt-4"></div>
       )}
-    </>
+    </div>
   )
 }

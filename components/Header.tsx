@@ -8,40 +8,40 @@ import SearchButton from './SearchButton'
 
 const Header = () => {
   return (
-    <header className="my-6 py-4 backdrop-blur-md z-50 bg-white/30 dark:bg-black/30  top-0 sticky transition-all duration-300">
-      <div className='flex items-center justify-between rounded-md mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-4xl xl:px-0'>
-      <div>
-        <Link href="/" aria-label={siteMetadata.headerTitle}>
-          <div className="flex items-center justify-between">
-            <div className="mr-3">
-              <Logo />
-            </div>
-            {typeof siteMetadata.headerTitle === 'string' ? (
-              <div className="hidden h-6 text-2xl font-semibold sm:block">
-                {siteMetadata.headerTitle}
+    <header className="sticky top-0 z-50 my-6 transition-all duration-300">
+      <div className="mx-auto flex max-w-3xl items-center justify-between rounded-2xl p-4 xl:max-w-4xl bg-white/30 dark:bg-black/30 backdrop-blur-md">
+        <div>
+          <Link href="/" aria-label={siteMetadata.headerTitle}>
+            <div className="flex items-center justify-between">
+              <div className="mr-3">
+                <Logo />
               </div>
-            ) : (
-              siteMetadata.headerTitle
-            )}
-          </div>
-        </Link>
-      </div>
-      <div className="flex items-center">
-        {headerNavLinks
-          .filter((link) => link.href !== '/')
-          .map((link) => (
-            <Link
-              key={link.title}
-              href={link.href}
-              className="hidden text-lg font-medium text-gray-900 dark:text-gray-100 sm:flex align-middle justify-center px-2 py-2 mx-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-200"
-            >
-              {link.title}
-            </Link>
-          ))}
-        <SearchButton />
-        <ThemeSwitch />
-        <MobileNav />
-      </div>
+              {typeof siteMetadata.headerTitle === 'string' ? (
+                <div className="hidden h-6 text-2xl font-semibold sm:block">
+                  {siteMetadata.headerTitle}
+                </div>
+              ) : (
+                siteMetadata.headerTitle
+              )}
+            </div>
+          </Link>
+        </div>
+        <div className="flex items-center">
+          {headerNavLinks
+            .filter((link) => link.href !== '/')
+            .map((link) => (
+              <Link
+                key={link.title}
+                href={link.href}
+                className="mx-2 hidden justify-center rounded-md px-2 py-2 align-middle text-lg font-medium transition-colors duration-200  hover:bg-transparent-blue hover:text-blue-600 sm:flex"
+              >
+                {link.title}
+              </Link>
+            ))}
+          <SearchButton />
+          <ThemeSwitch />
+          <MobileNav />
+        </div>
       </div>
     </header>
   )
