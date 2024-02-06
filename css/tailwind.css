@@ -22,10 +22,6 @@
   @apply my-5;
 }
 
-.icon-bg {
-  @apply rounded-md bg-gray-100 dark:bg-gray-700 transition-all duration-300
-}
-
 .neon-text {
   font-size: 3rem;
   color: #fff;
@@ -74,6 +70,10 @@
 }
 .gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500;
+}
+
+.icon-bg {
+  @apply rounded-md bg-transparent-blue hover:text-blue-600 transition-all duration-300
 }
 
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */

@@ -57,10 +57,10 @@ export default function AuthorLayout({ content }: Props) {
               经历
             </h1>
             <Link
-              className="h-10 w-20 rounded-lg border-2 bg-slate-200 text-center leading-8"
+              className="h-10 w-20 rounded-lg icon-bg text-center flex justify-center items-center"
               href="..."
             >
-              查看简历
+              <span className='flex justify-center'>简历</span>
             </Link>
           </div>
           <Experience />
