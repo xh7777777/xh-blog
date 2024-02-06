@@ -1,17 +1,13 @@
+'use client'
 import Link from '@/components/Link'
 import Welcome from '@/components/Welcome'
 import PostCard from '@/components/card/PostCard'
 import siteMetadata from '@/data/siteMetadata'
 import { motion } from 'framer-motion'
 import { fadeIn, staggerContainer } from 'utils/motion'
-import { getPostList } from 'api/serverApi'
-import { strapiToPost } from 'type/dto'
+import { IPost } from 'type'
 
-const MAX_DISPLAY = 3
-
-export default async function Home() {
-  const { data: postData } = await getPostList(0, MAX_DISPLAY)
-  const posts = strapiToPost(postData)
+export default async function Home({posts}: {posts: IPost[]}) {
 
   return (
     <div>
