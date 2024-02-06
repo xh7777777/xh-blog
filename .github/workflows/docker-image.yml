@@ -29,6 +29,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/nextblog:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/nextblog:version1.0
 
        
