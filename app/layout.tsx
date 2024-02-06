@@ -81,11 +81,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <body className="overflow-x-hidden bg-white text-black antialiased transition-all duration-300 dark:bg-gray-950 dark:text-white">
+      <body className="overflow-x-hidden bg-main tt antialiased transition-all ">
         <ThemeProviders>
           <Header />
           <SectionContainer>
-            <div className="flex min-h-screen flex-col justify-between font-sans">
+            <div className="flex min-h-screen flex-col justify-between font-sans relative">
+              <div className='gradient-01 z-0 left-1/2'></div>
               <main className="mb-auto">{children}</main>
               <Footer />
             </div>

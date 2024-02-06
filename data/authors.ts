@@ -14,7 +14,7 @@ export interface experienceProps {
     career: string
 }
 
-export const avatarURL = PREFIX + '/uploads/avatar_dece91d897.webp'
+export const avatarURL = PREFIX + '/uploads/avatar_0b82cef52b.webp'
 const shuURL = PREFIX + '/uploads/shu_1553bb59f5.webp'
 const tripURL = PREFIX + '/uploads/ctrip_6066af58ac.jpg'
 

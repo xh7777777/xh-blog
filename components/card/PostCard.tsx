@@ -9,7 +9,7 @@ function PostCard({ Slug, cover_url, description, title, tags, publish_date, rea
     <div className={className}>
       <article>
         <div
-          className=" group flex flex-col justify-start gap-8 rounded-3xl p-6 hover:bg-transparent-yellow md:flex-row duration-150 transition-colors"
+          className=" group flex flex-col justify-start gap-8 rounded-3xl p-6 hover:bg-blue-100 dark:hover:bg-transparent-blue md:flex-row duration-150 transition-colors"
         >
           <Image
             alt={title}
@@ -20,7 +20,7 @@ function PostCard({ Slug, cover_url, description, title, tags, publish_date, rea
           />
           <div className="flex flex-col justify-between">
             <div>
-              <Link className="text-2xl font-bold leading-8 tracking-tight group-hover:border-b-2 border-b-pink-400" href={`/blog/${Slug}`}>{title}</Link>
+              <Link className="text-2xl font-bold leading-8 tracking-tight group-hover:border-b-2 border-b-blue-400" href={`/blog/${Slug}`}>{title}</Link>
             </div>
             <div className='flex gap-3'>
               <dl className="text-base font-medium leading-6 ttt">
