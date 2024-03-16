@@ -98,7 +98,7 @@ module.exports = () => {
         {
             protocol: 'https',
             hostname: 'cdn.imxh777.com',
-        }
+        },
       ],
     },
     async headers() {

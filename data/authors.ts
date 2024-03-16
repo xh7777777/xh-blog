@@ -15,8 +15,9 @@ export interface experienceProps {
 }
 
 export const avatarURL = PREFIX + '/uploads/avatar_0b82cef52b.webp'
-const shuURL = PREFIX + '/uploads/shu_1553bb59f5.webp'
-const tripURL = PREFIX + '/uploads/ctrip_6066af58ac.jpg'
+const shuURL = PREFIX + '/uploads/shu_03f299ec18.png'
+const tripURL = PREFIX + '/uploads/trip_f5f0ecc74b.jpg'
+const baiLianURL = PREFIX + '/uploads/bailian_de707abe6a.webp'
 
 export const skills: skillProps[] = [
     {
@@ -66,12 +67,21 @@ export const experience = [
         name: "上海大学",
         iconUrl: shuURL,
         time: '2020.9 - 至今',
+        description: '学习',
         career: '计算机工程与科学学院'
     },
     {
         name: "携程集团",
         iconUrl: tripURL,
         time: '2023.6 - 2023.9',
+        description: '负责酒店扫码住前端研发',
         career: '前端开发实习'
+    },
+    {
+        name: "百联电商",
+        iconUrl: baiLianURL,
+        time: '2024.3 - 至今',
+        description: '负责百联到家前端研发',
+        career: '前端开发'
     },
 ]

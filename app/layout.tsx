@@ -77,16 +77,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       />
       <link rel="manifest" href="/static/favicons/site.webmanifest" />
       <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <body className="overflow-x-hidden bg-main tt antialiased transition-all ">
+      <body className="overflow-x-hidden overflow-y-auto bg-main tt antialiased transition-all p-0 m-0 relative">
         <ThemeProviders>
           <Header />
           <SectionContainer>
             <div className="flex min-h-screen flex-col justify-between font-sans relative">
-              <div className='gradient-01 z-0 left-1/2'></div>
               <main className="mb-auto">{children}</main>
               <Footer />
             </div>
