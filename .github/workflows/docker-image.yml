@@ -29,6 +29,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: xh7777/nextblog:v0.1.4
+          tags: xh7777/nextblog:v0.1.5
 
        
