@@ -1,8 +1,8 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'xh777的个人小站',
+  title: `xh777的个人小站 - xh777's blog`,
   author: 'HUAN XIAO',
-  headerTitle: 'xh777的个人小站',
+  headerTitle: `xh777的个人小站 - xh777's blog`,
   description: '分享前端技术、生活感悟、读书笔记、音乐演奏等...',
   language: 'zh-cn',
   theme: 'system', // system, dark or light
