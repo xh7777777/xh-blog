@@ -6,6 +6,8 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
 
+const title = `XH777's blog`
+
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 my-6 transition-all duration-300">
@@ -18,10 +20,10 @@ const Header = () => {
               </div>
               {typeof siteMetadata.headerTitle === 'string' ? (
                 <div className="hidden h-6 text-2xl font-semibold sm:block">
-                  {siteMetadata.headerTitle}
+                  {title}
                 </div>
               ) : (
-                siteMetadata.headerTitle
+                title
               )}
             </div>
           </Link>
