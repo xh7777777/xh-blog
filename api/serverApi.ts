@@ -131,7 +131,24 @@ export async function getAbout() {
   return res
 }
 
-export async function postMessage(data: string) {
+export async function getGuestBooks() {
+  const query = qs.stringify({
+    fields: ['id', 'name', 'content', 'site', 'createdAt'],
+  })
+  const res = await fetch(URL + `/guestBooks?${query}`, { next: { revalidate: REVALIDATE_TIME } }).then((res) =>
+    res.json()
+  )
+  return res
+}
+
+export async function postMessage({name, content, site}: {name: string, content: string, site: string}) {
+  const data = {
+    data: {
+      name,
+      content,
+      site,
+    }
+  }
   const res = await fetch(URL + `/guestBooks`, {
     method: 'POST',
     headers: {
