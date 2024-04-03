@@ -35,7 +35,7 @@ function PostCard({ Slug, cover_url, description, title, tags, publish_date, rea
                 </dl>
               </div>
             </div>
-            <div className="prose max-w-none ttt">{description}</div>
+            <div className="prose max-w-none ttt line-clamp-3">{description}</div>
             <div className="flex flex-wrap">
                 {tags.map((tag:any) => (
                   <Tag key={tag.id} text={tag.tag_name} />
