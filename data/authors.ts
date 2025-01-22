@@ -66,7 +66,7 @@ export const experience = [
     {
         name: "上海大学",
         iconUrl: shuURL,
-        time: '2020.9 - 至今',
+        time: '2020.9 - 2024.6',
         description: '学习',
         career: '计算机工程与科学学院'
     },

@@ -46,12 +46,20 @@ export default function AuthorLayout({ content }: Props) {
           </div>
         </div>
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
-            技能
-          </h1>
+          <div className="flex justify-between">
+            <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
+              技能
+            </h1>
+            <Link
+              className="h-10 w-20 rounded-lg icon-bg text-center flex justify-center items-center"
+              href="https://www.overleaf.com/"
+            >
+              <span className='flex justify-center'>简历</span>
+            </Link>
+          </div>
           <SkillList />
         </div>
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+        {/* <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <div className="flex justify-between">
             <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
               经历
@@ -64,7 +72,7 @@ export default function AuthorLayout({ content }: Props) {
             </Link>
           </div>
           <Experience />
-        </div>
+        </div> */}
       </div>
     </>
   )

@@ -9,8 +9,8 @@ import Link from 'next/link';
 import { avatarURL } from '@/data/authors';
 
 const welcome = `你好,我是xh777`
-const description = `我是一名前端工程师，对开源社区、React、Nodejs、CICD、音视频技术等有着很大的热情。
-这里汇集了我的思考、生活与我的一切，祝您有很好的阅读体验~`
+const description = `我是一名前端工程师，对Vue3、Nodejs、CICD、低代码技术等有着很大的热情。欢迎你的访问！
+想在自己的小网站分享自己的一些思考，可能啥奇奇怪怪的内容都有哦，总之希望你有很好的阅读体验！`
 
 function Welcome() {
   return (
