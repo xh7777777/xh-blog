@@ -32,10 +32,12 @@ jobs:
         run: 
           echo $(ls -la)
           docker build -t $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION .
+          docker tag $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:latest
       - 
         name: push to aliyun
         run: 
           docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION
+          docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:latest
         # uses: docker/build-push-action@v5
         # with:
         #   context: .
