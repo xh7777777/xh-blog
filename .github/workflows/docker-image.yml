@@ -12,6 +12,9 @@ env:
   ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
   ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
   IMAGE_VERSION: "v0.1.6"
+  SSH_USER: "${{ secrets.SSH_USER }}"
+  SSH_HOST: "${{ secrets.SSH_HOST }}"
+  SSH_PASSWORD: "${{ secrets.SSH_PASSWORD }}"
 
 jobs:
   build:
@@ -34,11 +37,15 @@ jobs:
           docker tag $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:latest
           docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:latest
           docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION
-        # uses: docker/build-push-action@v5
-        # with:
-        #   context: .
-        #   file: ./Dockerfile
-        #   push: true
-        #   tags: xh7777/nextblog:v0.1.6
+      - 
+        name: deploy
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y sshpass
+          sshpass -p $SSH_PASSWORD ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST
+          docker-compose pull
+          docker-compose up -d
+
+
 
        
