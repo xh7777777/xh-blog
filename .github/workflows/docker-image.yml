@@ -28,16 +28,12 @@ jobs:
         run: 
           docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
       -
-        name: Build
-        run: 
-          echo $(ls -la)
+        name: Build and Push
+        run: ｜
           docker build -t $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION .
           docker tag $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:latest
-      - 
-        name: push to aliyun
-        run: 
-          docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION
           docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:latest
+          docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION
         # uses: docker/build-push-action@v5
         # with:
         #   context: .
