@@ -99,6 +99,14 @@ module.exports = () => {
             protocol: 'https',
             hostname: 'cdn.imxh777.com',
         },
+        {
+            protocol: 'https',
+            hostname: 'cn-hangzhou.log.aliyuncs.com',
+        },
+        {
+          protocol: 'https',
+          hostname: 'aliyuncs.com',
+      },
       ],
     },
     async headers() {
