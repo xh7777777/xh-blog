@@ -8,8 +8,17 @@ const SearchButton = () => {
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), [])
 
+  const onBtnClick = () => {
+    // setIsSearchOpen(!isSearchOpen)
+    throw new Error('Not implemented')
+  }
+
+  const promiseErrorClick = () => {
+    Promise.reject(new Error('Not implemented'))
+  }
+
   return (
-    <button aria-label="Show Search" className="icon-bg ml-3 p-2">
+    <button aria-label="Show Search" className="icon-bg ml-3 p-2" onClick={promiseErrorClick}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"

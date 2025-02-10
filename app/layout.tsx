@@ -9,6 +9,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
 import GoogleAnalytics from './GoogleAnalytics';
+import Track from './track'
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -85,6 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <body className="overflow-x-hidden overflow-y-auto bg-main tt antialiased transition-all p-0 m-0 relative">
         <GoogleAnalytics />
+        <Track />
         <ThemeProviders>
           <Header />
           <SectionContainer>

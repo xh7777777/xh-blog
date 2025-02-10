@@ -6,9 +6,12 @@ import siteMetadata from '@/data/siteMetadata'
 import { motion } from 'framer-motion'
 import { fadeIn, staggerContainer } from 'utils/motion'
 import { IPost } from 'type'
+import { useEffect } from 'react';
 
-export default async function Home({posts}: {posts: IPost[]}) {
-
+export default function Home({posts}: {posts: IPost[]}) {
+  useEffect(() => {
+    // console.log('Home page mounted', window)
+  })
   return (
     <div>
       <Welcome />
