@@ -1,4 +1,6 @@
 export interface ErrorInfo {
+    timestamp: string;
+    userAgent: string;
     kind: string;
     type: string;
     errorType: string;
@@ -8,6 +10,21 @@ export interface ErrorInfo {
     colno: number;
     stack: string | null;
     selector: string | null;
+}
+
+export interface FetchErrorInfo {
+    title: string;
+    url: string;
+    timestamp: string;
+    userAgent: string;
+    kind: string;
+    type: string;
+    errorType: string;
+    pathName: string;
+    status: string;
+    duration: string;
+    response: string;
+    params: string;
 }
 
 export interface TrackRequest {
@@ -23,4 +40,16 @@ export interface TrackRequest {
             [key: string]: any;
         };
     };
+}
+
+export interface PvUvInfo {
+    timestamp: string;
+    userAgent: string;
+    kind: string;
+    type: string;
+    pathName: string;
+    title: string;
+    url: string;
+    referrer: string;
+    selector: string | null;
 }
