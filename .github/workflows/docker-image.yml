@@ -46,6 +46,9 @@ jobs:
           docker pull nginx
           docker tag nginx:latest $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/nginx:latest
           docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/nginx:latest
+          docker pull mongo
+          docker tag mongo:latest $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/mongo:latest
+          docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/mongo:latest
       - 
         name: deploy
         run: |
