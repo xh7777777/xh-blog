@@ -16,13 +16,14 @@ export default function GuestBookLayout() {
   
   useEffect(() => {
     async function fetchData() {
+      if (dataList.length > 0) return
       const { data } = await getGuestBooks()
       let res = Array.isArray(data) ? data : []
       if (dataList === res) return
       setDataList(res)
     }
     fetchData()
-  })
+  }, [dataList])
 
   function handleNameChange(e: React.ChangeEvent<HTMLInputElement>) {
     if (errorMessage) setErrorMessage('')

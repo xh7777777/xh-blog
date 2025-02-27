@@ -1,4 +1,4 @@
-import { ErrorInfo, TrackRequest } from "./errorTypes";
+import { ErrorInfo, TrackRequest, FetchErrorInfo } from "./errorTypes";
 
 const actions = ['click', 'touchstart', 'mousedown', 'keydown', 'mouseover'];
 const host = 'cn-hangzhou.log.aliyuncs.com'
@@ -40,7 +40,7 @@ export function getSelector(path: any[]) {
 
 export class SendTracker {
     static url: string = `https://${project}.${host}/logstores/${logStore}/track`
-    static async send(data: ErrorInfo) {
+    static async send(data: ErrorInfo | FetchErrorInfo) {
         console.log('send', data)
         for (let key in data) {
             if (data[key] === null || data[key] === undefined) {
@@ -74,4 +74,12 @@ export class SendTracker {
 
 export function getStackLines(stack: string) {
     return stack.split('\n').slice(1).map((line) => line.replace(/^\s+at\s+/g, '')).join('^')
+}
+
+export function isLoaded(callback: () => any) {
+    if (document.readyState === 'complete') {
+        callback && callback();
+    } else {
+        window.addEventListener('load', callback);
+    }
 }

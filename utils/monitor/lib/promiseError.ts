@@ -23,6 +23,8 @@ export function injectPromiseError() {
         }
 
         const errorInfo = {
+            timestamp: new Date().getTime().toString(),
+            userAgent: window.navigator.userAgent,
             kind: 'stability',
             type: 'error',
             errorType: 'promiseError',
