@@ -37,6 +37,9 @@ jobs:
           docker tag $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:latest
           docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:latest
           docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION
+          docker pull onerahmet/openai-whisper-asr-webservice:v1.8.2
+          docker tag onerahmet/openai-whisper-asr-webservice:v1.8.2 $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/openai-whisper-asr-webservice:v1.8.2
+          docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/openai-whisper-asr-webservice:v1.8.2
           docker pull mysql:8.0.36
           docker tag mysql:8.0.36 $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/mysql:8.0.36
           docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/mysql:8.0.36
