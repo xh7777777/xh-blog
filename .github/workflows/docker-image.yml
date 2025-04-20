@@ -11,7 +11,7 @@ env:
   ALIYUN_NAME_SPACE: "${{ secrets.ALIYUN_NAME_SPACE }}"
   ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
   ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
-  IMAGE_VERSION: "v0.1.6"
+  IMAGE_VERSION: "v0.1.7"
   SSH_USER: "${{ secrets.SSH_USER }}"
   SSH_HOST: "${{ secrets.SSH_HOST }}"
   SSH_PASSWORD: "${{ secrets.SSH_PASSWORD }}"
@@ -37,18 +37,6 @@ jobs:
           docker tag $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:latest
           docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:latest
           docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION
-          docker pull mysql
-          docker tag mysql:latest $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/mysql:latest
-          docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/mysql:latest
-          docker pull redis
-          docker tag redis:latest $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/redis:latest
-          docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/redis:latest
-          docker pull nginx
-          docker tag nginx:latest $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/nginx:latest
-          docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/nginx:latest
-          docker pull mongo
-          docker tag mongo:latest $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/mongo:latest
-          docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/mongo:latest
       - 
         name: deploy
         run: |
