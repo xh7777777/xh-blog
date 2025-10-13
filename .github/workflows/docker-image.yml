@@ -37,6 +37,9 @@ jobs:
           docker tag $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:latest
           docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:latest
           docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/xh-blog:$IMAGE_VERSION
+          docker pull stirlingtools/stirling-pdf
+          docker tag stirlingtools/stirling-pdf $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/stirling-pdf:latest
+          docker push $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/stirling-pdf:latest
       - 
         name: deploy
         run: |
