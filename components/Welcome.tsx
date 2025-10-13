@@ -32,6 +32,7 @@ function Welcome() {
         <motion.div className='flex gap-4 py-2 md:py-6'>
           <Link href={'/about'} className=' rounded-sm icon-bg px-4 py-2 ttt'>关于我</Link>
           <Link href={'/blog'} className=' rounded-sm icon-bg px-4 py-2 ttt'>阅读文章</Link>
+          <Link href={'/resume'} className=' rounded-sm icon-bg px-4 py-2 ttt'>我的简历</Link>
         </motion.div>
       </motion.div>
 

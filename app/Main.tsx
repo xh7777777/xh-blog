@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { fadeIn, staggerContainer } from 'utils/motion'
 import { IPost } from 'type'
 import { useEffect } from 'react';
+import { FaFileAlt } from 'react-icons/fa';
 
 export default function Home({posts}: {posts: IPost[]}) {
   useEffect(() => {
@@ -15,6 +16,23 @@ export default function Home({posts}: {posts: IPost[]}) {
   return (
     <div>
       <Welcome />
+      
+      {/* 快速导航按钮 */}
+      {/* <motion.div 
+        className="mb-8"
+        variants={fadeIn('up', 'spring', 0.3, 1)}
+        initial="hidden"
+        animate="show"
+      >
+        <Link
+          href="/resume"
+          className="inline-flex items-center px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors"
+        >
+          <FaFileAlt className="mr-2" />
+          查看我的简历
+        </Link>
+      </motion.div> */}
+      
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         {/* 博客列表 */}
         <motion.div
